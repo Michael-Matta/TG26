@@ -6,7 +6,7 @@
 #include "TG26_AnimInstanceBase.h"
 #include "TG26_AnimInstanceShared.generated.h"
 
-
+enum class EMovementState : uint8;
 enum class ECardinalDirections : uint8;
 class ATG26_CharacterBase;
 class UCharacterMovementComponent;
@@ -55,10 +55,16 @@ protected:
 	float VelocityDirectionAngle;
 	
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category="TG26|Data|Locomotion")
-	float CardinalDeadzone;
+	float CardinalDeadZone;
 	
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category="TG26|Data|Locomotion")
 	bool bIsFirstUpdate;
+	
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category="TG26|Data|Locomotion")
+	bool bIsFalling;
+	
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category="TG26|Data|Locomotion")
+	EMovementState MovementState;
 	
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category="TG26|Data|Locomotion")
 	ECardinalDirections VelocityDirection;

@@ -21,6 +21,8 @@ public:
 	// Sets default values for this character's properties
 	ATG26_PlayerCharacter();
 	
+	virtual void BeginPlay() override;
+	
 protected:
 	// Camera
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "TG26|Character", meta=(AllowPrivateAccess="True"))

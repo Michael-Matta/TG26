@@ -48,6 +48,13 @@ ATG26_PlayerCharacter::ATG26_PlayerCharacter()
 	ReceiveControllerChangedDelegate.AddDynamic(this, &ThisClass::ATG26_PlayerCharacter::HandleControllerChanged);
 }
 
+void ATG26_PlayerCharacter::BeginPlay()
+{
+	Super::BeginPlay();
+	MovementState = EMovementState::Walking;
+	
+}
+
 
 void ATG26_PlayerCharacter::HandleControllerChanged(APawn* Pawn, AController* OldController, AController* NewController)
 {

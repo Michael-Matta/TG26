@@ -11,12 +11,13 @@ void UTG26_AnimInstanceShared::NativeInitializeAnimation()
 	Super::NativeInitializeAnimation(); // HE REMOVED THIS
 	
 	OwningPlayer = Cast<ATG26_CharacterBase>(TryGetPawnOwner());
-	if (!IsValid(OwningPlayer)){return;};
+	
+	if (!IsValid(OwningPlayer)){return;}; // Early Exit if Player is not valid
 	
 	MovementComponent= OwningPlayer->GetCharacterMovement();
-	
 	WorldLocation = OwningPlayer->GetActorLocation();
-	CardinalDeadzone = 10.f;
+	
+	CardinalDeadZone = 10.f;
 	bIsFirstUpdate = true;
 	
 }
@@ -25,7 +26,7 @@ void UTG26_AnimInstanceShared::NativeThreadSafeUpdateAnimation(float DeltaSecond
 {
 	Super::NativeThreadSafeUpdateAnimation(DeltaSeconds); // HE REMOVED THIS
 	
-	if (!IsValid(OwningPlayer)){return;};
+	if (!IsValid(OwningPlayer)){return;}; // Early Exit if Player is not valid
 	
 	WorldRotation = OwningPlayer->GetActorRotation();
 	WorldAcceleration2D = MovementComponent->GetCurrentAcceleration() * FVector(1.f, 1.f, 0.f);
@@ -41,12 +42,14 @@ void UTG26_AnimInstanceShared::NativeThreadSafeUpdateAnimation(float DeltaSecond
 	VelocityDirectionAngle = UTG26_AnimUtils::CalculateDirection(WorldVelocity2D, WorldRotation);
 	
 	// Cardinal Direction from Angle
-	VelocityDirection = CalculateDirectionFromAngle(CardinalDeadzone, bWasMovingLastUpdate);
+	VelocityDirection = CalculateDirectionFromAngle(CardinalDeadZone, bWasMovingLastUpdate);
+	
+	MovementState = OwningPlayer->GetMovementState();
+	bIsFalling = MovementComponent->IsFalling();
 	
 	// Size2D gets a float magnitude out of the vector displacement
 	DisplacementLastUpdate = (OwningPlayer->GetActorLocation() - WorldLocation).Size2D();
 	WorldLocation = OwningPlayer->GetActorLocation();
-	
 	// Useful for Motion and Stride Warping
 	DisplacementSpeed = (DisplacementLastUpdate != 0.0f) ? (DisplacementLastUpdate / DeltaSeconds) : 0.0f;
 	
@@ -57,7 +60,6 @@ void UTG26_AnimInstanceShared::NativeThreadSafeUpdateAnimation(float DeltaSecond
 	}
 	
 	bIsFirstUpdate = false;
-	
 }
 
 ECardinalDirections UTG26_AnimInstanceShared::CalculateDirectionFromAngle(const float InDeadZone,
