@@ -2,7 +2,7 @@
 
 
 #include "TGCharacter.h"
-#include "TG26/Jetpack/JetpackComponent.h"
+#include "TG26/Deprecated/Jetpack/JetpackComponent.h"
 #include "Engine/LocalPlayer.h"
 #include "GameFramework/Controller.h"
 #include "EnhancedInputComponent.h"

@@ -90,6 +90,7 @@ void ATG26_PlayerCharacter::SetupPlayerInputComponent(class UInputComponent* Pla
 		
 		// Sprinting
 		EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Triggered, this, &ThisClass::Sprint);
+		EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Completed, this, &ThisClass::StopSprinting);
 	}
 	else
 	{
@@ -125,14 +126,14 @@ void ATG26_PlayerCharacter::Look(const FInputActionValue& Value)
 
 void ATG26_PlayerCharacter::Sprint()
 {
-	if (GetCharacterMovement()->MaxWalkSpeed == WalkingSpeed)
-	{
-		GetCharacterMovement()->MaxWalkSpeed = SprintingSpeed;
-	}
-	else
-	{
-		GetCharacterMovement()->MaxWalkSpeed = WalkingSpeed;
-	}
+	MovementState = EMovementState::Jogging;
+	GetCharacterMovement()->MaxWalkSpeed = SprintingSpeed;
+}
+
+void ATG26_PlayerCharacter::StopSprinting()
+{
+	MovementState = EMovementState::Walking;
+	GetCharacterMovement()->MaxWalkSpeed = WalkingSpeed;
 }
 
 

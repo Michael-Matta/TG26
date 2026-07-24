@@ -66,6 +66,7 @@ public:
 	void Move(const FInputActionValue& Value);
 	void Look(const FInputActionValue& Value);
 	void Sprint();
+	void StopSprinting();
 	
 };
 	
