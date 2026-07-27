@@ -9,6 +9,9 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "GameplayTags/TG26_GameplayTagsInput.h"
+#include "Input/TG26_InputComponent.h"
+#include "Input/TG26_InputConfig.h"
 #include "TG26/TG26.h"
 
 
@@ -44,8 +47,6 @@ ATG26_PlayerCharacter::ATG26_PlayerCharacter()
 	CameraComponent->SetupAttachment(SpringArmComponent);
 	CameraComponent->bUsePawnControlRotation = false;
 	
-	
-	ReceiveControllerChangedDelegate.AddDynamic(this, &ThisClass::ATG26_PlayerCharacter::HandleControllerChanged);
 }
 
 void ATG26_PlayerCharacter::BeginPlay()
@@ -53,20 +54,9 @@ void ATG26_PlayerCharacter::BeginPlay()
 	Super::BeginPlay();
 	MovementState = EMovementState::Walking;
 	
-}
-
-
-void ATG26_PlayerCharacter::HandleControllerChanged(APawn* Pawn, AController* OldController, AController* NewController)
-{
-	APlayerController* PlayerController = Cast<APlayerController>(NewController);
-	if (PlayerController)
+	if (IsValid(AnimLayerClass))
 	{
-		// this is how you get any subsystem you want from a local player
-		UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PlayerController->GetLocalPlayer());
-		if (Subsystem)
-		{
-			Subsystem->AddMappingContext(DefaultMappingContext, 0);
-		}
+		GetMesh()->LinkAnimClassLayers(AnimLayerClass);
 	}
 }
 
@@ -74,27 +64,25 @@ void ATG26_PlayerCharacter::HandleControllerChanged(APawn* Pawn, AController* Ol
 void ATG26_PlayerCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
+	check(InputConfig);
+	
+	// TODO ???? THis is multiplayer code. Can we ditch it?
+	const ULocalPlayer* LocalPlayer = GetController<APlayerController>()->GetLocalPlayer();
+	check(LocalPlayer);
+	
+	UEnhancedInputLocalPlayerSubsystem* Subsystem = LocalPlayer->GetSubsystem<UEnhancedInputLocalPlayerSubsystem>();
+	check(Subsystem);
+	
+	Subsystem->ClearAllMappings();
+	Subsystem->AddMappingContext(InputConfig->DefaultMappingContext, 0);
+	
+	// Project Settings- Engine Input - Default Input Component needs to be set to the custom class	
 
 	// Set up Action bindings
-	if (UEnhancedInputComponent* EnhancedInputComponent = CastChecked<UEnhancedInputComponent>(PlayerInputComponent))
+	if (UTG26_InputComponent* TG26_InputComponent = CastChecked<UTG26_InputComponent>(PlayerInputComponent))
 	{
-		// Moving
-		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ThisClass::Move);
-		
-		// Looking
-		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ThisClass::Look);
-		
-		// Jumping
-		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Started, this, &ACharacter::Jump);
-		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Completed, this, &ACharacter::StopJumping);
-		
-		// Sprinting
-		EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Triggered, this, &ThisClass::Sprint);
-		EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Completed, this, &ThisClass::StopSprinting);
-	}
-	else
-	{
-		UE_LOG(LogTG26, Error, TEXT("'%s' Failed to find an Enhanced Input component! This template is built to use the Enhanced Input system. If you intend to use the legacy system, then you will need to update this C++ file."), *GetNameSafe(this));
+		TG26_InputComponent->BindNativeAction(InputConfig, TG26_GameplayTags::InputTag_Move, ETriggerEvent::Triggered, this, &ThisClass::Move);
+		TG26_InputComponent->BindNativeAction(InputConfig, TG26_GameplayTags::InputTag_Look, ETriggerEvent::Triggered, this, &ThisClass::Look);
 	}
 }
 
@@ -123,18 +111,3 @@ void ATG26_PlayerCharacter::Look(const FInputActionValue& Value)
 	AddControllerYawInput(InputValue.X);
 	AddControllerPitchInput(InputValue.Y);
 }
-
-void ATG26_PlayerCharacter::Sprint()
-{
-	MovementState = EMovementState::Jogging;
-	GetCharacterMovement()->MaxWalkSpeed = SprintingSpeed;
-}
-
-void ATG26_PlayerCharacter::StopSprinting()
-{
-	MovementState = EMovementState::Walking;
-	GetCharacterMovement()->MaxWalkSpeed = WalkingSpeed;
-}
-
-
-

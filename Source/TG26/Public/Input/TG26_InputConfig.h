@@ -39,7 +39,6 @@ public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta=(ExposeFunctionCategories="InputTag"))
 	TArray<FTG26_InputActionConfig> TG26_InputActions;	
 	
-	UFUNCTION()
 	TObjectPtr<UInputAction> GetInputActionByTag (const FGameplayTag& InInputTag) const;
 	
 	// For Future use with Abilities

@@ -6,6 +6,7 @@
 #include "TG26_CharacterBase.h"
 #include "TG26_PlayerCharacter.generated.h"
 
+class UTG26_InputConfig;
 struct FInputActionValue;
 class UInputAction;
 class UInputMappingContext;
@@ -31,21 +32,13 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "TG26|Character", meta=(AllowPrivateAccess="True"))
 	TObjectPtr<UCameraComponent> CameraComponent;
 	
-	// Input
-	UPROPERTY(EditDefaultsOnly, Category ="TG26|Character|Input", meta=(AllowPrivateAccess=true))
-	TObjectPtr<UInputMappingContext> DefaultMappingContext;
+	// Input Config - Mapping Context and Input Actions
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="TG26|Character|Input", meta=(AllowPrivateAccess="True"))
+	TObjectPtr<UTG26_InputConfig> InputConfig;
 	
-	UPROPERTY(EditDefaultsOnly, Category ="TG26|Character|Input", meta=(AllowPrivateAccess=true))
-	TObjectPtr<UInputAction> MoveAction;
-	
-	UPROPERTY(EditDefaultsOnly, Category ="TG26|Character|Input", meta=(AllowPrivateAccess=true))
-	TObjectPtr<UInputAction> LookAction;
-	
-	UPROPERTY(EditDefaultsOnly, Category ="TG26|Character|Input", meta=(AllowPrivateAccess=true))
-	TObjectPtr<UInputAction> JumpAction ;
-	
-	UPROPERTY(EditDefaultsOnly, Category ="TG26|Character|Input", meta=(AllowPrivateAccess=true))
-	TObjectPtr<UInputAction> SprintAction ;
+	// Animation
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="TG26|Character|Animation", meta=(AllowPrivateAccess="True"))
+	TSubclassOf<UAnimInstance> AnimLayerClass;
 	
 protected:
 	UPROPERTY(EditDefaultsOnly, Category ="TG26|Character|Input", meta=(AllowPrivateAccess=true))
@@ -55,18 +48,13 @@ protected:
 	float SprintingSpeed = 800.0;
 	
 public:
-	//This is what the delegate binds too in the constructor
-	UFUNCTION()
-	void HandleControllerChanged(APawn* Pawn, AController* OldController, AController* NewController);
-	
 	//Overriding a function
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	
 	// Matching functions for the input Actions, Jump is bound directly to Character class functions
 	void Move(const FInputActionValue& Value);
 	void Look(const FInputActionValue& Value);
-	void Sprint();
-	void StopSprinting();
+
 	
 };
 	
