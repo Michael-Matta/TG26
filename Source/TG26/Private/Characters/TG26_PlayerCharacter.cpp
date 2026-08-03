@@ -6,6 +6,7 @@
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "InputMappingContext.h"
+#include "AbilitySystem/TG26_AbilitySystemComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
@@ -52,6 +53,7 @@ ATG26_PlayerCharacter::ATG26_PlayerCharacter()
 void ATG26_PlayerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+	
 	MovementState = EMovementState::Walking;
 	
 	if (IsValid(AnimLayerClass))
@@ -83,6 +85,9 @@ void ATG26_PlayerCharacter::SetupPlayerInputComponent(class UInputComponent* Pla
 	{
 		TG26_InputComponent->BindNativeAction(InputConfig, TG26_GameplayTags::InputTag_Move, ETriggerEvent::Triggered, this, &ThisClass::Move);
 		TG26_InputComponent->BindNativeAction(InputConfig, TG26_GameplayTags::InputTag_Look, ETriggerEvent::Triggered, this, &ThisClass::Look);
+		
+		TG26_InputComponent->BindAbilityAction(InputConfig, this, &ThisClass::AbilityInputPressed,&ThisClass::AbilityInputReleased);
+		
 	}
 }
 
@@ -110,4 +115,14 @@ void ATG26_PlayerCharacter::Look(const FInputActionValue& Value)
 	
 	AddControllerYawInput(InputValue.X);
 	AddControllerPitchInput(InputValue.Y);
+}
+
+void ATG26_PlayerCharacter::AbilityInputPressed(const FGameplayTag InputTag)
+{
+	TG26_AbilitySystemComponent->AbilityTagPressed(InputTag);
+}
+
+void ATG26_PlayerCharacter::AbilityInputReleased(const FGameplayTag InputTag)
+{
+	TG26_AbilitySystemComponent->AbilityTagReleased(InputTag);
 }

@@ -47,13 +47,16 @@ protected:
 	UPROPERTY(EditDefaultsOnly, Category ="TG26|Character|Input", meta=(AllowPrivateAccess=true))
 	float SprintingSpeed = 800.0;
 	
+	// Matching functions for the input Actions, Jump is bound directly to Character class functions
+	void Move(const FInputActionValue& Value);
+	void Look(const FInputActionValue& Value);
+	void AbilityInputPressed(const FGameplayTag InputTag);
+	void AbilityInputReleased(const FGameplayTag InputTag);
+	
 public:
 	//Overriding a function
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	
-	// Matching functions for the input Actions, Jump is bound directly to Character class functions
-	void Move(const FInputActionValue& Value);
-	void Look(const FInputActionValue& Value);
 
 	
 };

@@ -6,3 +6,5 @@
 // The string values are the tags as they show in the engine.
 UE_DEFINE_GAMEPLAY_TAG(TG26_GameplayTags::InputTag_Move, "Input.Tag.Move")
 UE_DEFINE_GAMEPLAY_TAG(TG26_GameplayTags::InputTag_Look, "Input.Tag.Look")
+UE_DEFINE_GAMEPLAY_TAG(TG26_GameplayTags::InputTag_Sprint, "Input.Tag.Sprint")
+UE_DEFINE_GAMEPLAY_TAG(TG26_GameplayTags::InputTag_Jump, "Input.Tag.Jump")

@@ -10,6 +10,7 @@
 #include "TG26_CharacterBase.generated.h"
 
 
+class UTG26_CharacterStartupData;
 class UTG26_AbilitySystemComponent;
 
 UCLASS()
@@ -34,13 +35,17 @@ protected:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="TG26|Animation", meta=(AllowPrivateAccess=true))
 	EMovementState MovementState;
 	
-	UPROPERTY(EditDefaultsOnly, Category="TG26_|Character|Abilities")
-	TArray<TSubclassOf<UGameplayAbility>> DefaultAbilities;
+	// This may contain assets that we don't want loading immediatly so we make it Soft...
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="TG26_StartupData")
+	TSoftObjectPtr<UTG26_CharacterStartupData> StartupData;
 	
 	void GiveStartingAbilities() const;
 	
 public:
-	UFUNCTION(BlueprintPure, Category="Animation")
+	UFUNCTION(BlueprintCallable, Category="TG26|Animation")
+	void SetMovementState(const EMovementState InMovementState);
+	
+	UFUNCTION(BlueprintPure, Category="TG26|Animation")
 	EMovementState GetMovementState() const {return MovementState;}
 
 };

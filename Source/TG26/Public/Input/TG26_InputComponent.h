@@ -22,7 +22,7 @@ public:
 		ETriggerEvent TriggerEvent, UserObject* Object, FuncType Func);
 	
 	template<class UserObject, typename FuncType>
-	void BindAbilities(const UTG26_InputConfig* InInputConfig, UserObject* Object, FuncType PressedFunc, 
+	void BindAbilityAction(const UTG26_InputConfig* InInputConfig, UserObject* Object, FuncType PressedFunc, 
 		FuncType ReleasedFunc);
 };
 
@@ -40,7 +40,7 @@ void UTG26_InputComponent::BindNativeAction(const UTG26_InputConfig* InInputConf
 }
 
 template <class UserObject, typename FuncType>
-void UTG26_InputComponent::BindAbilities(const UTG26_InputConfig* InInputConfig, UserObject* Object,
+void UTG26_InputComponent::BindAbilityAction(const UTG26_InputConfig* InInputConfig, UserObject* Object,
 	FuncType PressedFunc, FuncType ReleasedFunc)
 {
 	check(InInputConfig);
@@ -49,9 +49,9 @@ void UTG26_InputComponent::BindAbilities(const UTG26_InputConfig* InInputConfig,
 		if (AbilityActionConfig.InputAction && AbilityActionConfig.InputTag.IsValid())
 		{
 			if (PressedFunc)
-				BindAction(AbilityActionConfig.InputAction, AbilityActionConfig.TriggerEvent, Object, PressedFunc);
+				BindAction(AbilityActionConfig.InputAction, AbilityActionConfig.TriggerEvent, Object, PressedFunc, AbilityActionConfig.InputTag);
 			if (ReleasedFunc)
-				BindAction(AbilityActionConfig.InputAction, ETriggerEvent::Completed, Object, ReleasedFunc);
+				BindAction(AbilityActionConfig.InputAction, ETriggerEvent::Completed, Object, ReleasedFunc, AbilityActionConfig.InputTag);
 		}
 	}
 }

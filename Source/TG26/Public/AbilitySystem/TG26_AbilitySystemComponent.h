@@ -17,5 +17,8 @@ public:
 	UTG26_AbilitySystemComponent();
 	
 	
+	void AbilityTagPressed(const FGameplayTag& InputTag);
+	
+	void AbilityTagReleased(const FGameplayTag& InputTag);
 	
 };
