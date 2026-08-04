@@ -10,6 +10,7 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "GameplayTags/TG26_GameplayTagsAbility.h"
 #include "GameplayTags/TG26_GameplayTagsInput.h"
 #include "Input/TG26_InputComponent.h"
 #include "Input/TG26_InputConfig.h"
@@ -48,6 +49,9 @@ ATG26_PlayerCharacter::ATG26_PlayerCharacter()
 	CameraComponent->SetupAttachment(SpringArmComponent);
 	CameraComponent->bUsePawnControlRotation = false;
 	
+	// Jump
+	JumpMaxCount = 2;
+	
 }
 
 void ATG26_PlayerCharacter::BeginPlay()
@@ -55,6 +59,7 @@ void ATG26_PlayerCharacter::BeginPlay()
 	Super::BeginPlay();
 	
 	MovementState = EMovementState::Walking;
+	TG26_AbilitySystemComponent->AddLooseGameplayTag(TG26_GameplayTags::Ability_Movement_Grounded);
 	
 	if (IsValid(AnimLayerClass))
 	{
@@ -91,6 +96,12 @@ void ATG26_PlayerCharacter::SetupPlayerInputComponent(class UInputComponent* Pla
 	}
 }
 
+void ATG26_PlayerCharacter::Landed(const FHitResult& Hit)
+{
+	Super::Landed(Hit);
+	TG26_AbilitySystemComponent->AddLooseGameplayTag(TG26_GameplayTags::Ability_Movement_Grounded);
+	TG26_AbilitySystemComponent->RemoveLooseGameplayTag(TG26_GameplayTags::Ability_Movement_DoubleJump); // Resets Double Jump
+}
 
 void ATG26_PlayerCharacter::Move(const FInputActionValue& Value)
 {
@@ -122,7 +133,20 @@ void ATG26_PlayerCharacter::AbilityInputPressed(const FGameplayTag InputTag)
 	TG26_AbilitySystemComponent->AbilityTagPressed(InputTag);
 }
 
+
 void ATG26_PlayerCharacter::AbilityInputReleased(const FGameplayTag InputTag)
 {
 	TG26_AbilitySystemComponent->AbilityTagReleased(InputTag);
+}
+
+
+void ATG26_PlayerCharacter::AddGameplayTag(const FGameplayTag& InTag)
+{
+	TG26_AbilitySystemComponent->AddLooseGameplayTag(InTag);
+}
+
+
+void ATG26_PlayerCharacter::RemoveGameplayTag(const FGameplayTag& InTag)
+{
+	TG26_AbilitySystemComponent->RemoveLooseGameplayTag(InTag);
 }
