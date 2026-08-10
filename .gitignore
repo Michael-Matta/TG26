@@ -59,6 +59,7 @@ Plugins/Runtime/
 
 # Ignore files in Content
 Content/ThirdParty/
+Content/Animated_Nebulas_Starter_Pack/
 Content/Fab/
 Content/Megaplant_Library/
 Content/ParagonZinx/
