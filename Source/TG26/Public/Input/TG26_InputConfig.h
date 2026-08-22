@@ -20,7 +20,7 @@ struct FTG26_InputActionConfig
 	TObjectPtr<UInputAction> InputAction;
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
-	ETriggerEvent TriggerEvent;
+	ETriggerEvent TriggerEvent = ETriggerEvent::Triggered;
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta=(ExposeFunctionCategories="InputTag"))
 	FGameplayTag InputTag;

@@ -8,7 +8,9 @@ public class TG26EditorTarget : TargetRules
 	public TG26EditorTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
-		DefaultBuildSettings = BuildSettingsVersion.V6;
+		DefaultBuildSettings = BuildSettingsVersion.V7; 
+		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_8;
+		
 
 		ExtraModuleNames.AddRange( new string[] { "TG26" } );
 		RegisterModulesCreatedByRider();

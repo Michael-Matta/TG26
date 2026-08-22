@@ -8,8 +8,9 @@ public class TG26Target : TargetRules
 	public TG26Target(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
-		DefaultBuildSettings = BuildSettingsVersion.V6;
-
+		DefaultBuildSettings = BuildSettingsVersion.V7;
+		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_8;
+		
 		ExtraModuleNames.AddRange( new string[] { "TG26" } );
 		RegisterModulesCreatedByRider();
 	}
