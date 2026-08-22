@@ -14,15 +14,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2a1779e-6cbf-4736-83f2-d7e6a6f4e727" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TG26/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TG26/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TG26/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vsconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.vsconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26.Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26.Target.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Public/Input/TG26_InputConfig.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Public/Input/TG26_InputConfig.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26Editor.Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26Editor.Target.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEditor.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEditor.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/Input/DA_PlayerDefaultInputConfig.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/Input/DA_PlayerDefaultInputConfig.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/DarkMap_01.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/DarkMap_01.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Materials/M_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Materials/M_Base.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/EnvironmentVFX/NS_Ribbon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/EnvironmentVFX/NS_Ribbon.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TG26.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/TG26.uproject" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -159,7 +156,9 @@
       <workItem from="1787363742751" duration="1584000" />
       <workItem from="1787366527824" duration="1491000" />
       <workItem from="1787368039826" duration="398000" />
-      <workItem from="1787419551085" duration="431000" />
+      <workItem from="1787419551085" duration="812000" />
+      <workItem from="1787428160700" duration="691000" />
+      <workItem from="1787432272498" duration="1279000" />
     </task>
     <servers />
   </component>

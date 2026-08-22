@@ -59,6 +59,9 @@ Plugins/Runtime/
 
 # Ignore files in Content
 Content/ThirdParty/
+Content/Chaotic_Skies
+Content/ExampleContent
+Content/Global
 Content/Animated_Nebulas_Starter_Pack/
 Content/Fab/
 Content/Megaplant_Library/
