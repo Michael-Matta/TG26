@@ -14,13 +14,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2a1779e-6cbf-4736-83f2-d7e6a6f4e727" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEditor.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEditor.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/Input/DA_PlayerDefaultInputConfig.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/Input/DA_PlayerDefaultInputConfig.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/CPP_Testing.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/CPP_Testing.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/DarkMap_01.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/DarkMap_01.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Materials/M_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Materials/M_Base.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/EnvironmentVFX/NS_Ribbon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/EnvironmentVFX/NS_Ribbon.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TG26.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/TG26.uproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Materials/M_WaterBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Materials/M_WaterBase.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,6 +156,7 @@
       <workItem from="1787419551085" duration="812000" />
       <workItem from="1787428160700" duration="691000" />
       <workItem from="1787432272498" duration="1279000" />
+      <workItem from="1787455240092" duration="747000" />
     </task>
     <servers />
   </component>
