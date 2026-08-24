@@ -58,11 +58,5 @@ public:
 	
 	virtual void Landed(const FHitResult& Hit) override;
 	
-	UFUNCTION(BlueprintCallable, Category="TG26|Character|Abilities|Tags")
-	void AddGameplayTag(const FGameplayTag& InTag);
-	
-	UFUNCTION(BlueprintCallable, Category="TG26|Character|Abilities|Tags")
-	void RemoveGameplayTag(const FGameplayTag& InTag);
-	
 };
 	

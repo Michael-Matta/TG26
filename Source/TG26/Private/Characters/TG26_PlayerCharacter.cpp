@@ -138,15 +138,3 @@ void ATG26_PlayerCharacter::AbilityInputReleased(const FGameplayTag InputTag)
 {
 	TG26_AbilitySystemComponent->AbilityTagReleased(InputTag);
 }
-
-
-void ATG26_PlayerCharacter::AddGameplayTag(const FGameplayTag& InTag)
-{
-	TG26_AbilitySystemComponent->AddLooseGameplayTag(InTag);
-}
-
-
-void ATG26_PlayerCharacter::RemoveGameplayTag(const FGameplayTag& InTag)
-{
-	TG26_AbilitySystemComponent->RemoveLooseGameplayTag(InTag);
-}

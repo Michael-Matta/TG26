@@ -45,7 +45,12 @@ public:
 	UFUNCTION(BlueprintCallable, Category="TG26|Animation")
 	void SetMovementState(const EMovementState InMovementState);
 	
+	UFUNCTION(BlueprintCallable, Category="TG26|Character|Abilities|Tags")
+	void AddGameplayTag(const FGameplayTag& InTag);
+	
+	UFUNCTION(BlueprintCallable, Category="TG26|Character|Abilities|Tags")
+	void RemoveGameplayTag(const FGameplayTag& InTag);
+
 	UFUNCTION(BlueprintPure, Category="TG26|Animation")
 	EMovementState GetMovementState() const {return MovementState;}
-
 };
