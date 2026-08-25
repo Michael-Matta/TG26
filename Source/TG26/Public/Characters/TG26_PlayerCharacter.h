@@ -42,10 +42,10 @@ protected:
 	
 protected:
 	UPROPERTY(EditDefaultsOnly, Category ="TG26|Character|Input", meta=(AllowPrivateAccess=true))
-	float WalkingSpeed = 500.0;
+	float WalkingSpeed = 300.0;
 	
 	UPROPERTY(EditDefaultsOnly, Category ="TG26|Character|Input", meta=(AllowPrivateAccess=true))
-	float SprintingSpeed = 800.0;
+	float SprintingSpeed = 600.0;
 	
 	// Matching functions for the input Actions, Jump is bound directly to Character class functions
 	void Move(const FInputActionValue& Value);
