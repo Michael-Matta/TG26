@@ -59,6 +59,7 @@ Plugins/Runtime/
 
 # Ignore files in Content
 Content/ThirdParty/
+Content/EasyFog/
 Content/Chaotic_Skies
 Content/ExampleContent
 Content/Global

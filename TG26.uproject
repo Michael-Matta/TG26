@@ -117,6 +117,10 @@
 		{
 			"Name": "PCGToolset",
 			"Enabled": true
+		},
+		{
+			"Name": "Harmonix",
+			"Enabled": true
 		}
 	]
 }
