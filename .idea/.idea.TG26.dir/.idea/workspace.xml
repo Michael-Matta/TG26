@@ -14,27 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2a1779e-6cbf-4736-83f2-d7e6a6f4e727" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Audio/Music/ThemeAStems/MX_ThemeA.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Audio/Music/ThemeAStems/MX_ThemeA.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/BP_TG26_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/BP_TG26_PlayerCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/DarkMap_01.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/DarkMap_01.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/LS_DarkMap_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/LS_DarkMap_01.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Materials/MI_Floor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Materials/MI_Floor.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Materials/MI_Water_Chaos.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Materials/MI_Water_Chaos.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Materials/M_Floor.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/mattaVFX/EditorMoviePipelineQueue.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/mattaVFX/EditorMoviePipelineQueue.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/mattaVFX/MaterialsVFX/M_6Point.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/mattaVFX/MaterialsVFX/M_6Point.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/mattaVFX/MaterialsVFX/M_Beam.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/mattaVFX/MaterialsVFX/M_Beam.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/mattaVFX/MaterialsVFX/M_Distortion.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/mattaVFX/MaterialsVFX/M_Distortion.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/mattaVFX/MaterialsVFX/M_Distortion_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/mattaVFX/MaterialsVFX/M_Distortion_2.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/mattaVFX/Pending_MoviePipelinePrimaryConfig.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/mattaVFX/Pending_MoviePipelinePrimaryConfig.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/mattaVFX/VFXM_Ink/Textures/6Point/T_ToxicExplosion_BBF.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/mattaVFX/VFXM_Ink/Textures/6Point/T_ToxicExplosion_BBF.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/mattaVFX/VFXM_Ink/Textures/6Point/T_ToxicExplosion_Emissive.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/mattaVFX/VFXM_Ink/Textures/6Point/T_ToxicExplosion_Emissive.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/mattaVFX/VFXM_Ink/Textures/6Point/T_ToxicExplosion_TLR.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/mattaVFX/VFXM_Ink/Textures/6Point/T_ToxicExplosion_TLR.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/mattaVFX/VFXM_ToxicSplash/Map/Map_VFX_ToxiSplash_M.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/mattaVFX/VFXM_ToxicSplash/Map/Map_VFX_ToxiSplash_M.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/mattaVFX/VFXM_ToxicSplash/Niagara/NS_Toxic_Cast.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/mattaVFX/VFXM_ToxicSplash/Niagara/NS_Toxic_Cast.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TG26.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/TG26.uproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/CPP_Testing.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/CPP_Testing.umap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,6 +168,7 @@
       <workItem from="1787786598096" duration="1000" />
       <workItem from="1787787095794" duration="1591000" />
       <workItem from="1787853522778" duration="3040000" />
+      <workItem from="1787882143396" duration="814000" />
     </task>
     <servers />
   </component>
