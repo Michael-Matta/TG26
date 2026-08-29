@@ -14,7 +14,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2a1779e-6cbf-4736-83f2-d7e6a6f4e727" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/CPP_Testing.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/CPP_Testing.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEditor.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEditor.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Items/Staff.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Items/Staff.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/Anims/Montages/AM_Hurt_Air_Falling_Seq.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/Anims/Montages/AM_Hurt_Air_Falling_Seq.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/Anims/Staff/AM_StaffRaisedPowerLand.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/BP_TG26_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/BP_TG26_PlayerCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/Weapon/BP_Staff.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/Weapon/BP_Staff.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/PlayerVFX/NS_Lightning.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/PlayerVFX/NS_Lightning.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/DarkMap_01.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/DarkMap_01.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/LS_DarkMap_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/LS_DarkMap_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/VFXASandbox/Characters/Jeanette_Playable/Materials/Char_Face_Inst.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFXASandbox/Characters/Jeanette_Playable/Materials/Char_Face_Inst.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/mattaVFX/MaterialsVFX/M_Beam.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/mattaVFX/MaterialsVFX/M_Beam.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/mattaVFX/MaterialsVFX/M_Distortion.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/mattaVFX/MaterialsVFX/M_Distortion.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/mattaVFX/MaterialsVFX/M_Flare.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/mattaVFX/MaterialsVFX/M_Flare.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/mattaVFX/MaterialsVFX/M_RadialEnergy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/mattaVFX/MaterialsVFX/M_RadialEnergy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/mattaVFX/MaterialsVFX/M_Shockwave_MM.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/mattaVFX/MaterialsVFX/M_Shockwave_MM.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/mattaVFX/MaterialsVFX/M_SparksEmbers.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/mattaVFX/MaterialsVFX/M_SparksEmbers.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/mattaVFX/VFXM_Ink/MaterialsInstances/MI_Flare_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/mattaVFX/VFXM_Ink/MaterialsInstances/MI_Flare_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/mattaVFX/VFXM_Ink/Niagara/NS_Cast_MM.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/mattaVFX/VFXM_Ink/Niagara/NS_Cast_MM.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/mattaVFX/VFXM_Ink/Niagara/NS_Charge_MM.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/mattaVFX/VFXM_Ink/Niagara/NS_Charge_MM.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,6 +188,9 @@
       <workItem from="1787787095794" duration="1591000" />
       <workItem from="1787853522778" duration="3040000" />
       <workItem from="1787882143396" duration="814000" />
+      <workItem from="1787943667248" duration="1511000" />
+      <workItem from="1787954260033" duration="697000" />
+      <workItem from="1787968019263" duration="1272000" />
     </task>
     <servers />
   </component>
