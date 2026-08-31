@@ -15,31 +15,17 @@
   <component name="ChangeListManager">
     <list default="true" id="e2a1779e-6cbf-4736-83f2-d7e6a6f4e727" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Audio/Music/ThemeAStems/MX_ThemeA.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Audio/Music/ThemeAStems/MX_ThemeA.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Audio/SFX/MS_SFX_ChainsCreature.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Audio/SFX/SFXAudio/247440-pitched-Just-Chains-pull-Hanging-Jingle-12.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Audio/SFX/SFXAudio/247824-Just-Chains-pull-ChainHoist-54.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Audio/SFX/SFXAudio/247873-pitched-Just-Chains-pull-ChainHoist-28.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Audio/SFX/SFXAudio/247879-pitched-Just-Chains-pull-ChainHoist-34.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Audio/SFX/SFXAudio/413464-Robotic_Lifeforms_2_-Synths_-Mecha_Wobbler_Power_Down_Synth_0112.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/BP_TG26_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/BP_TG26_PlayerCharacter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/DarkMap_01.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/DarkMap_01.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/LS_DarkMap_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/LS_DarkMap_01.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/Emitters/NE_CorruptBugs.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/Emitters/NE_FireFlies.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/Emitters/NE_Rain_CPU.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/Emitters/NE_Rain_GPU.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/Emitters/NE_Smoke.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/Systems/NS_CorruptBugs.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/Systems/NS_CorruptTree.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/Systems/NS_FireFlies.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/Systems/NS_Jellyfish.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/Systems/NS_Rain.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/Systems/NS_Shield.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/Systems/NS_Smoke.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/Systems/NS_Sparks.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/Systems/NS_TG_Jellyfish.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/VFX_Blueprints/BP_Shield.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/VFX_Blueprints/BP_Shield.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/VFX_Materials/M_SmokeSprite.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/VFX_Materials/M_SmokeSprite.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TG26/Maps/OpenWorldTest/0/V3/LH8G17GOP5XGFV6AJVD5LG.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TG26/Maps/OpenWorldTest/0/V3/LH8G17GOP5XGFV6AJVD5LG.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TG26/Maps/OpenWorldTest/2/B5/RXK14WCAI7CH49SWAEUACC.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TG26/Maps/OpenWorldTest/2/B5/RXK14WCAI7CH49SWAEUACC.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TG26/Maps/OpenWorldTest/3/5V/DRGMPUQH9588667YNWAIAI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TG26/Maps/OpenWorldTest/3/5V/DRGMPUQH9588667YNWAIAI.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TG26/Maps/OpenWorldTest/4/2I/QWANX2AL09Y5SCWZWIG1A3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TG26/Maps/OpenWorldTest/4/2I/QWANX2AL09Y5SCWZWIG1A3.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TG26/Maps/OpenWorldTest/7/UR/350T78TDR2947PIPQOEITO.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TG26/Maps/OpenWorldTest/7/UR/350T78TDR2947PIPQOEITO.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TG26/Maps/OpenWorldTest/E/5I/LOFAYCCM8HPXE1IBBIK8A8.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TG26/Maps/OpenWorldTest/E/5I/LOFAYCCM8HPXE1IBBIK8A8.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/EnvironmentVFX/BP/BP_ChaosTentacles.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/EnvironmentVFX/BP/BP_ChaosTentacles.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/NiagaraSystems/NS_CorruptBugs.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/NiagaraSystems/NS_CorruptBugs.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,6 +186,10 @@
       <workItem from="1788021819049" duration="708000" />
       <workItem from="1788032712771" duration="735000" />
       <workItem from="1788053816663" duration="1321000" />
+      <workItem from="1788133061686" duration="964000" />
+      <workItem from="1788134720969" duration="697000" />
+      <workItem from="1788196352868" duration="700000" />
+      <workItem from="1788201195102" duration="1331000" />
     </task>
     <servers />
   </component>
