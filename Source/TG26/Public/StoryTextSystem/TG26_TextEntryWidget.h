@@ -33,7 +33,10 @@ protected:
 
 	UFUNCTION()
 	void HandleSubmit();
-
+	
+	UFUNCTION(BlueprintImplementableEvent)
+	void NotifyBlueprintClosing();
+	
 	void Close();
 
 private:

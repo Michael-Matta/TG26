@@ -15,17 +15,16 @@
   <component name="ChangeListManager">
     <list default="true" id="e2a1779e-6cbf-4736-83f2-d7e6a6f4e727" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Audio/SFX/MS_SFX_ChainsCreature.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Audio/SFX/SFXAudio/247440-pitched-Just-Chains-pull-Hanging-Jingle-12.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Audio/SFX/SFXAudio/247824-Just-Chains-pull-ChainHoist-54.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Audio/SFX/SFXAudio/247873-pitched-Just-Chains-pull-ChainHoist-28.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Audio/SFX/SFXAudio/247879-pitched-Just-Chains-pull-ChainHoist-34.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Audio/SFX/SFXAudio/413464-Robotic_Lifeforms_2_-Synths_-Mecha_Wobbler_Power_Down_Synth_0112.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/ABP/ABP_TG26_LinkedLayerAnim.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/ABP/ABP_TG26_LinkedLayerAnim.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/BP_TG26_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/BP_TG26_PlayerCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/PlayerVFX/BP_LandingPlatform.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/PlayerVFX/BP_LandingPlatform.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/PlayerVFX/NS_Lightning.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/PlayerVFX/NS_Lightning.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/HoudiniTerrains/HoudiniTerrain_01.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/HoudiniTerrains/HoudiniTerrain_01.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/DarkMap_01.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/DarkMap_01.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/LS_DarkMap_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/LS_DarkMap_01.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/EnvironmentVFX/BP/BP_ChaosTentacles.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/EnvironmentVFX/BP/BP_ChaosTentacles.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/NiagaraSystems/NS_CorruptBugs.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/NiagaraSystems/NS_CorruptBugs.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/StoryTextSystem/BP_StoryTextEntryPoint.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/StoryTextSystem/BP_StoryTextEntryPoint.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/StoryTextSystem/UI/BP_TextEntryWidget_Test_1.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/StoryTextSystem/TG26_TextEntryWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/StoryTextSystem/TG26_TextEntryWidget.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26/Public/StoryTextSystem/TG26_TextEntryWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Public/StoryTextSystem/TG26_TextEntryWidget.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,6 +189,8 @@
       <workItem from="1788134720969" duration="697000" />
       <workItem from="1788196352868" duration="700000" />
       <workItem from="1788201195102" duration="1331000" />
+      <workItem from="1788211500704" duration="1258000" />
+      <workItem from="1788227410042" duration="1827000" />
     </task>
     <servers />
   </component>

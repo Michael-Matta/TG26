@@ -66,8 +66,10 @@ void UTG26_TextEntryWidget::HandleSubmit()
 			Log->AddEntry(BodyBox->GetText().ToString(), PromptTag);
 		}
 	}
+	NotifyBlueprintClosing();
 	Close();
 }
+
 
 void UTG26_TextEntryWidget::Close()
 {
