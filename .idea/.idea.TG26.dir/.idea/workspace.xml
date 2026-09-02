@@ -14,17 +14,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2a1779e-6cbf-4736-83f2-d7e6a6f4e727" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Audio/Music/ThemeAStems/MX_ThemeA.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Audio/Music/ThemeAStems/MX_ThemeA.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Audio/Music/ThemeAStems/TG_ThemeA_HARMONY.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Audio/Music/ThemeAStems/TG_ThemeA_HARMONY.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Audio/Music/ThemeAStems/TG_ThemeA_LEADS.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Audio/Music/ThemeAStems/TG_ThemeA_LEADS.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Audio/Music/ThemeAStems/TG_ThemeA_PERC.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Audio/Music/ThemeAStems/TG_ThemeA_PERC.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Audio/Music/ThemeAStems/TG_ThemeA_Stereo_Out.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Audio/Music/ThemeAStems/TG_ThemeA_Stereo_Out.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/BP_TG26_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/BP_TG26_PlayerCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/PlayerVFX/BP_LandingPlatform.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/PlayerVFX/BP_LandingPlatform.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/PlayerVFX/MI_PP_FishEyeLense_Inst.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/PlayerVFX/MI_PP_FishEyeLense_Inst.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/PlayerVFX/M_PP_FishEyeLense.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/PlayerVFX/M_PP_FishEyeLense.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/PlayerVFX/BP_LandingPlatform.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/PlayerVFX/MI_PP_FishEyeLense_Inst.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/PlayerVFX/M_PP_FishEyeLense.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/PlayerVFX/PC_PostProcessEffects.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/DarkMap_01.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/DarkMap_01.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/LS_DarkMap_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/LS_DarkMap_01.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/StoryTextSystem/BPI_TG_Interact.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/StoryTextSystem/BPI_TG_Interact.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Materials/M_EyeMachine_Glow.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Materials/M_EyeMachine_Glow.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TG26/StoryTextSystem/BP_StoryTextEntryPoint.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/StoryTextSystem/BP_StoryTextEntryPoint.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/StoryTextSystem/UI/WBP_TextEntryWidget_Test_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/StoryTextSystem/UI/WBP_TextEntryWidget_Test_1.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/SceneCapturePortals/BP_PortalDoor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/SceneCapturePortals/BP_PortalDoor.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/SceneCapturePortals/HoudTerrTextureRenderTargetCube_Tex4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/SceneCapturePortals/HoudTerrTextureRenderTargetCube_Tex4.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/EnvironmentVFX/BP/BP_ChaosTentacles.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/NiagaraModuleScripts/NMS_ChaosMusicParticleVelocity.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/NiagaraModuleScripts/NMS_ChaosMusicParticleVelocity.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/NiagaraSystems/NS_TG_Jellyfish.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/NiagaraSystems/NS_TG_Jellyfish.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/SceneCapturePortals/BP_PortalDoor.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/VFX_Materials/M_Jellyfish.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/VFX_Materials/M_Jellyfish.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,6 +201,8 @@
       <workItem from="1788211500704" duration="1258000" />
       <workItem from="1788227410042" duration="1827000" />
       <workItem from="1788277872786" duration="2314000" />
+      <workItem from="1788298780445" duration="1428000" />
+      <workItem from="1788300662814" duration="9041000" />
     </task>
     <servers />
   </component>
