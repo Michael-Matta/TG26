@@ -15,21 +15,14 @@
   <component name="ChangeListManager">
     <list default="true" id="e2a1779e-6cbf-4736-83f2-d7e6a6f4e727" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Audio/Music/ThemeAStems/MX_ThemeA.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Audio/Music/ThemeAStems/MX_ThemeA.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Audio/SFX/SFXAudio/SFX_PlayerPowerCast.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Audio/SFX/SFXAudio/SFX_PlayerPowerCast.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/Anims/Montages/AM_StaffRaisedPowerLand.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/Anims/Montages/AM_StaffRaisedPowerLand.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/BP_TG26_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/BP_TG26_PlayerCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/Materials/Manny/M_TG_Manny_Temp.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/Materials/Manny/M_TG_Manny_Temp.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/Meshes/SK_TG_Mannequin_UE5.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/Meshes/SK_TG_Mannequin_UE5.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/HoudiniTerrains/HoudiniTerrain_01.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/HoudiniTerrains/HoudiniTerrain_01.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/LevelInterfaces/BPI_LevelFXTriggers.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/LevelInterfaces/BPI_LevelFXTriggers.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/DarkMap_01.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/DarkMap_01.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/LS_DarkMap_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/LS_DarkMap_01.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/EnvironmentVFX/NPC_MusicFX.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/EnvironmentVFX/NS_RhythmSwarm.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/EnvironmentVFX/NS_RhythmSwarm.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/NiagaraModuleScripts/NMS_ChaosMusicParticleVelocity.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/NiagaraModuleScripts/NMS_MusicChaosIntensity.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/NiagaraSystems/NS_TG_Jellyfish.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/NiagaraSystems/NS_TG_Jellyfish.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/NiagaraSystems/NS_Waves.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/NiagaraSystems/NS_Waves.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/mattaVFX/MaterialsVFX/M_Beam.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/mattaVFX/MaterialsVFX/M_Beam.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/SceneCapturePortals/M_HoudTerrTextureRenderTargetCube.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/SceneCapturePortals/M_HoudTerrTextureRenderTargetCube.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/VFX_Blueprints/BP_PortalDoor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/VFX_Blueprints/BP_PortalDoor.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,6 +198,8 @@
       <workItem from="1788361874403" duration="879000" />
       <workItem from="1788371819497" duration="1000" />
       <workItem from="1788378212210" duration="2387000" />
+      <workItem from="1788386416643" duration="670000" />
+      <workItem from="1788462957533" duration="3155000" />
     </task>
     <servers />
   </component>
