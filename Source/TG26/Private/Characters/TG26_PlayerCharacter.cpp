@@ -42,7 +42,7 @@ ATG26_PlayerCharacter::ATG26_PlayerCharacter()
 	// Camera
 	SpringArmComponent = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArmComponent"));
 	SpringArmComponent->SetupAttachment(RootComponent);
-	SpringArmComponent->TargetArmLength = 600.0f;
+	SpringArmComponent->TargetArmLength = 800.0f;
 	SpringArmComponent->bUsePawnControlRotation = true;
 	
 	CameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("CameraComponent"));

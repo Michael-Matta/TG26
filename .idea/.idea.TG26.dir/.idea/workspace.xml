@@ -15,14 +15,17 @@
   <component name="ChangeListManager">
     <list default="true" id="e2a1779e-6cbf-4736-83f2-d7e6a6f4e727" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Audio/VO/TG26_NarratorMix_Pt1_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Audio/VO/TG26_NarratorMix_Pt1_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/ABP/ABP_TG26_LinkedLayerAnim.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/ABP/ABP_TG26_LinkedLayerAnim.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/BP_TG26_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/BP_TG26_PlayerCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/HoudiniTerrains/HoudiniTerrain_01.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/HoudiniTerrains/HoudiniTerrain_01.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/LevelInterfaces/BPI_LevelFXTriggers.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/LevelInterfaces/BPI_LevelFXTriggers.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/Materials/Manny/M_TG_Manny_Temp.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/Materials/Manny/M_TG_Manny_Temp.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/DarkMap_01.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/DarkMap_01.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/LS_DarkMap_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/LS_DarkMap_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/LS_VO_Intro.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/LS_VO_Intro.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/StoryTextSystem/BP_StoryTextEntryPoint.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/StoryTextSystem/BP_StoryTextEntryPoint.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/NiagaraSystems/NS_Waves.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/NiagaraSystems/NS_Waves.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/SceneCapturePortals/M_HoudTerrTextureRenderTargetCube.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/SceneCapturePortals/M_HoudTerrTextureRenderTargetCube.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/VFX_Blueprints/BP_PortalDoor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/VFX_Blueprints/BP_PortalDoor.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/Characters/TG26_PlayerCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/Characters/TG26_PlayerCharacter.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,6 +203,8 @@
       <workItem from="1788378212210" duration="2387000" />
       <workItem from="1788386416643" duration="670000" />
       <workItem from="1788462957533" duration="3155000" />
+      <workItem from="1788476614766" duration="147000" />
+      <workItem from="1788486222376" duration="3000000" />
     </task>
     <servers />
   </component>
