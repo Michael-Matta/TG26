@@ -5,6 +5,7 @@
 
 #include "AbilitySystem/TG26_AbilitySystemComponent.h"
 #include "Characters/Data/TG26_CharacterStartupData.h"
+#include "Components/TG26_ItemAbilityManagerComp.h"
 
 
 ATG26_CharacterBase::ATG26_CharacterBase()
@@ -15,6 +16,8 @@ ATG26_CharacterBase::ATG26_CharacterBase()
 	GetMesh()->bReceivesDecals = false;
 	
 	TG26_AbilitySystemComponent = CreateDefaultSubobject<UTG26_AbilitySystemComponent>("TG26_AbilitySystemComponent");
+	
+	ItemAbilityManagerComp = CreateDefaultSubobject<UTG26_ItemAbilityManagerComp>("ItemAbilityManagerComponent");
 	
 }
 
@@ -42,6 +45,8 @@ void ATG26_CharacterBase::GiveStartingAbilities() const
 	{
 		LoadedStartupData->GiveAbilityToComponent(TG26_AbilitySystemComponent);
 	}
+	
+	// @TO_DO Intialize Weapon Specs
 }
 
 void ATG26_CharacterBase::SetMovementState(const EMovementState InMovementState)

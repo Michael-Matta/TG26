@@ -10,6 +10,7 @@
 #include "TG26_CharacterBase.generated.h"
 
 
+class UTG26_ItemAbilityManagerComp;
 class UTG26_CharacterStartupData;
 class UTG26_AbilitySystemComponent;
 
@@ -32,6 +33,9 @@ protected:
 	UPROPERTY(VisibleAnywhere, Category="TG26|Character|AbilitySystem")
 	TObjectPtr<UTG26_AbilitySystemComponent> TG26_AbilitySystemComponent;
 	
+	UPROPERTY(VisibleAnywhere, Category="TG26|Character|Item|Abilities")
+	TObjectPtr<UTG26_ItemAbilityManagerComp> ItemAbilityManagerComp;
+	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="TG26|Animation", meta=(AllowPrivateAccess=true))
 	EMovementState MovementState;
 	
@@ -42,6 +46,10 @@ protected:
 	void GiveStartingAbilities() const;
 	
 public:
+
+	UFUNCTION(BlueprintCallable, Category="TG26|Item|Abilties")
+	UTG26_ItemAbilityManagerComp* GetItemAbilityManagerComponent() {return ItemAbilityManagerComp.Get();};
+	
 	UFUNCTION(BlueprintCallable, Category="TG26|Animation")
 	void SetMovementState(const EMovementState InMovementState);
 	

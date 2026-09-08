@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "AbilitySystem/TG26_GameplayAbility.h"
 #include "Engine/DataAsset.h"
+#include "Items/Specs/TG26_PlayerWeaponSpec.h"
 #include "TG26_CharacterStartupData.generated.h"
 
 /**
@@ -23,6 +24,10 @@ protected:
 	// Startup Abilities
 	UPROPERTY(EditDefaultsOnly, Category="TG26|StartupData")
 	TArray<TSubclassOf<UTG26_GameplayAbility>> StartupAbilities;
+	
+	UPROPERTY(EditDefaultsOnly, Category="TG26|StartupData|WeaponSpec")
+	TArray<TObjectPtr<UTG26_PlayerWeaponSpec>> StartingWeapons;
+	
 	
 	void GiveAbilities(TArray<TSubclassOf<UTG26_GameplayAbility>>& AbilitiesToGive, UTG26_AbilitySystemComponent* InTG26_AbilityComponent, int32 ApplyLevel=1);
 };
