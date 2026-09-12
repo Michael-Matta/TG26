@@ -7,6 +7,7 @@
 #include "Engine/DataAsset.h"
 #include "TG26_ItemSpecBase.generated.h"
 
+class UTG26_ItemInstanceBase;
 class UInputMappingContext;
 /**
  * 
@@ -28,6 +29,6 @@ public:
 	FGameplayTag ItemTag;
 	
 	// Factory Method
-	// virtual TG26_ItemInstanceBase* CreateItemInstance(UObject* Outer) const;
+	virtual UTG26_ItemInstanceBase* CreateItemInstance(UObject* Outer) const;
 
 };
