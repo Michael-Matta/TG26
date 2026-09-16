@@ -53,13 +53,13 @@ void ATG26_CharacterBase::SetMovementState(const EMovementState InMovementState)
 	MovementState = InMovementState;
 }
 
-void ATG26_CharacterBase::AddGameplayTag(const FGameplayTag& InTag)
+void ATG26_CharacterBase::AddGameplayTag(const FGameplayTag InTag)
 {
 	TG26_AbilitySystemComponent->AddLooseGameplayTag(InTag);
 }
 
 
-void ATG26_CharacterBase::RemoveGameplayTag(const FGameplayTag& InTag)
+void ATG26_CharacterBase::RemoveGameplayTag(const FGameplayTag InTag)
 {
 	TG26_AbilitySystemComponent->RemoveLooseGameplayTag(InTag);
 }
