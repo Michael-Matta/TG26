@@ -13,6 +13,7 @@ UE_DEFINE_GAMEPLAY_TAG(TG26_GameplayTags::Ability_Movement_DoubleJump, "Ability.
 UE_DEFINE_GAMEPLAY_TAG(TG26_GameplayTags::Ability_BlockMontage, "Ability.BlockMontage")
 
 UE_DEFINE_GAMEPLAY_TAG(TG26_GameplayTags::Ability_Player_Weapon_Staff, "Ability.Player.Weapon.Staff")
+UE_DEFINE_GAMEPLAY_TAG(TG26_GameplayTags::Ability_Player_Weapon_Secondary, "Ability.Player.Weapon.Secondary")
 
 // Staff Related Tags
 UE_DEFINE_GAMEPLAY_TAG(TG26_GameplayTags::Ability_Player_Equip_Staff, "Ability.Player.Equip.Staff")

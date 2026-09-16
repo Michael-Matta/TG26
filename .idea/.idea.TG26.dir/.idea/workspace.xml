@@ -15,20 +15,30 @@
   <component name="ChangeListManager">
     <list default="true" id="e2a1779e-6cbf-4736-83f2-d7e6a6f4e727" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ParagonSunWukong/Characters/Heroes/Wukong/Meshes/Wukong.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ParagonSunWukong/Characters/Heroes/Wukong/Meshes/Wukong.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/ABP/ABP_TG26_LinkedLayerAnim.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/ABP/ABP_TG26_LinkedLayerAnim.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/Abilities/Combat/Weapons/GA_PlayerEquipStaff.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/Abilities/Combat/Weapons/GA_SpawnPlayerStaff.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/BP_TG26_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/BP_TG26_PlayerCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/Input/IMC_TG26_Default.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/Input/IMC_TG26_Default.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/Meshes/SKM_TG_Manny_Simple_UE5.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/Meshes/SKM_TG_Manny_Simple_UE5.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/Meshes/SK_TG_Mannequin_UE5.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/Meshes/SK_TG_Mannequin_UE5.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/Setup/DA_PlayerAbilityStartupData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/Setup/DA_PlayerAbilityStartupData.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/Setup/DA_PlayerDefaultInputConfig.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/Setup/DA_PlayerDefaultInputConfig.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/Weapon/DA_StaffSpec.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/CPP_Testing.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/CPP_Testing.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/Characters/Data/TG26_CharacterStartupData.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/Characters/Data/TG26_CharacterStartupData.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/Characters/TG26_CharacterBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/Characters/TG26_CharacterBase.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/Characters/TG26_PlayerCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/Characters/TG26_PlayerCharacter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/TG26/Private/Components/TG26_ItemAbilityManagerComp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/Components/TG26_ItemAbilityManagerComp.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/Items/InstanceObjects/TG26_ItemInstanceBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/Items/InstanceObjects/TG26_ItemInstanceBase.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/Items/InstanceObjects/TG26_PlayerWeaponInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/Items/InstanceObjects/TG26_PlayerWeaponInstance.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/Items/InstanceObjects/TG26_SpawnedItemInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/Items/InstanceObjects/TG26_SpawnedItemInstance.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/Items/Specs/TG26_ItemSpecBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/Items/Specs/TG26_ItemSpecBase.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/Items/Specs/TG26_PlayerWeaponSpec.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/Items/Specs/TG26_PlayerWeaponSpec.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/Items/Specs/TG26_SpawnedItemSpec.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/Items/Specs/TG26_SpawnedItemSpec.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/GameplayTags/TG26_GameplayTagsAbility.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/GameplayTags/TG26_GameplayTagsAbility.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/GameplayTags/TG26_GameplayTagsInput.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/GameplayTags/TG26_GameplayTagsInput.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26/Public/Characters/Data/TG26_CharacterStartupData.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Public/Characters/Data/TG26_CharacterStartupData.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26/Public/Characters/TG26_CharacterBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Public/Characters/TG26_CharacterBase.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/TG26/Public/Components/TG26_ItemAbilityManagerComp.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Public/Components/TG26_ItemAbilityManagerComp.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Public/Items/InstanceObjects/TG26_ItemInstanceBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Public/Items/InstanceObjects/TG26_ItemInstanceBase.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Public/Items/InstanceObjects/TG26_PlayerWeaponInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Public/Items/InstanceObjects/TG26_PlayerWeaponInstance.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Public/Items/InstanceObjects/TG26_SpawnedItemInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Public/Items/InstanceObjects/TG26_SpawnedItemInstance.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Public/Items/Specs/TG26_ItemSpecBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Public/Items/Specs/TG26_ItemSpecBase.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26/Public/GameplayTags/TG26_GameplayTagsAbility.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Public/GameplayTags/TG26_GameplayTagsAbility.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26/Public/GameplayTags/TG26_GameplayTagsInput.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Public/GameplayTags/TG26_GameplayTagsInput.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/TG26/Public/Items/Specs/TG26_PlayerWeaponSpec.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Public/Items/Specs/TG26_PlayerWeaponSpec.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Public/Items/Specs/TG26_SpawnedItemSpec.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Public/Items/Specs/TG26_SpawnedItemSpec.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,26 +52,23 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../../Video Games/UE_5.8/Engine/Source/Runtime/Engine/Classes/Engine/LocalPlayer.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Video Games/UE_5.8/Engine/Source/Runtime/Engine/Classes/GameFramework/Character.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Video Games/UE_5.8/Engine/Source/Runtime/Engine/Private/Components/SceneComponent.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Video Games/UE_5.8/Engine/Source/Runtime/UMG/Private/UserWidget.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Video Games/UE_5.8/Engine/Source/ThirdParty/libpas/src/libpas/libpas.Build.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/TG26/Components/Private/TG26_ItemAbilityManagerComp.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/TG26/Components/Public/TG26_ItemAbilityManagerComp.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Private/Components/TG26_ItemAbilityManagerComp.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Private/Items/InstanceObjects/TG26_ItemInstanceBase.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Private/Items/InstanceObjects/TG26_PlayerWeaponInstance.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Private/Items/InstanceObjects/TG26_SpawnedItemInstance.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Private/Items/Specs/TG26_ItemSpecBase.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Private/Items/Specs/TG26_SpawnedItemSpec.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/TG26/Private/Items/Specs/TG26_WeaponSpec.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Public/Components/TG26_ItemAbilityManagerComp.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Public/Items/InstanceObjects/TG26_ItemInstanceBase.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Public/Items/InstanceObjects/TG26_PlayerWeaponInstance.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Public/Items/InstanceObjects/TG26_SpawnedItemInstance.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Public/Items/Specs/TG26_ItemSpecBase.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Public/Items/Specs/TG26_SpawnedItemSpec.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/TG26/Public/Items/Specs/TG26_WeaponSpec.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -232,6 +239,9 @@
       <workItem from="1788825347667" duration="3564000" />
       <workItem from="1788974109553" duration="12150000" />
       <workItem from="1789148814472" duration="5919000" />
+      <workItem from="1789408086083" duration="8101000" />
+      <workItem from="1789490330383" duration="4358000" />
+      <workItem from="1789507329184" duration="4080000" />
     </task>
     <servers />
   </component>

@@ -14,6 +14,8 @@ UE_DEFINE_GAMEPLAY_TAG(TG26_GameplayTags::InputTag_Jump, "Input.Tag.Jump")
 // Item and Weapon Inputs
 UE_DEFINE_GAMEPLAY_TAG(TG26_GameplayTags::InputTag_EquipMainWeapon, "Input.Tag.EquipMainWeapon")
 
-UE_DEFINE_GAMEPLAY_TAG(TG26_GameplayTags::InputTag_Staff_LightAttack, "Input.Tag.Staff.LightAttack")
-UE_DEFINE_GAMEPLAY_TAG(TG26_GameplayTags::InputTag_Staff_HeavyAttack, "Input.Tag.Staff.HeavyAttack")
+UE_DEFINE_GAMEPLAY_TAG(TG26_GameplayTags::InputTag_Block, "Input.Tag.Block")
+
+UE_DEFINE_GAMEPLAY_TAG(TG26_GameplayTags::InputTag_Attack_Light, "Input.Tag.Attack.Light")
+UE_DEFINE_GAMEPLAY_TAG(TG26_GameplayTags::InputTag_Attack_Heavy, "Input.Tag.Attack.Heavy")
 

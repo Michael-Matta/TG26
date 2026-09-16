@@ -34,7 +34,7 @@ protected:
 	TObjectPtr<UTG26_AbilitySystemComponent> TG26_AbilitySystemComponent;
 	
 	UPROPERTY(VisibleAnywhere, Category="TG26|Character|Item|Abilities")
-	TObjectPtr<UTG26_ItemAbilityManagerComp> ItemAbilityManagerComp;
+	TObjectPtr<UTG26_ItemAbilityManagerComp> TG26_ItemAbilityManagerComponent;
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="TG26|Animation", meta=(AllowPrivateAccess=true))
 	EMovementState MovementState;
@@ -47,8 +47,8 @@ protected:
 	
 public:
 
-	UFUNCTION(BlueprintCallable, Category="TG26|Item|Abilties")
-	UTG26_ItemAbilityManagerComp* GetItemAbilityManagerComponent() {return ItemAbilityManagerComp.Get();};
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category="TG26|Item|Abilties")
+	UTG26_ItemAbilityManagerComp* GetItemAbilityManagerComponent() {return TG26_ItemAbilityManagerComponent.Get();};
 	
 	UFUNCTION(BlueprintCallable, Category="TG26|Animation")
 	void SetMovementState(const EMovementState InMovementState);

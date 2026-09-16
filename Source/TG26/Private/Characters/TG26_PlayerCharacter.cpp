@@ -42,7 +42,7 @@ ATG26_PlayerCharacter::ATG26_PlayerCharacter()
 	// Camera
 	SpringArmComponent = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArmComponent"));
 	SpringArmComponent->SetupAttachment(RootComponent);
-	SpringArmComponent->TargetArmLength = 1000.0f;
+	SpringArmComponent->TargetArmLength = 800.0f;
 	SpringArmComponent->bUsePawnControlRotation = true;
 	
 	CameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("CameraComponent"));
@@ -73,7 +73,6 @@ void ATG26_PlayerCharacter::SetupPlayerInputComponent(class UInputComponent* Pla
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 	check(InputConfig);
 	
-	// TODO ???? THis is multiplayer code. Can we ditch it?
 	const ULocalPlayer* LocalPlayer = GetController<APlayerController>()->GetLocalPlayer();
 	check(LocalPlayer);
 	
@@ -96,12 +95,6 @@ void ATG26_PlayerCharacter::SetupPlayerInputComponent(class UInputComponent* Pla
 	}
 }
 
-void ATG26_PlayerCharacter::Landed(const FHitResult& Hit)
-{
-	Super::Landed(Hit);
-	TG26_AbilitySystemComponent->AddLooseGameplayTag(TG26_GameplayTags::Ability_Movement_Grounded);
-	TG26_AbilitySystemComponent->RemoveLooseGameplayTag(TG26_GameplayTags::Ability_Movement_DoubleJump); // Resets Double Jump
-}
 
 void ATG26_PlayerCharacter::Move(const FInputActionValue& Value)
 {
@@ -138,3 +131,12 @@ void ATG26_PlayerCharacter::AbilityInputReleased(const FGameplayTag InputTag)
 {
 	TG26_AbilitySystemComponent->AbilityTagReleased(InputTag);
 }
+
+
+void ATG26_PlayerCharacter::Landed(const FHitResult& Hit)
+{
+	Super::Landed(Hit);
+	TG26_AbilitySystemComponent->AddLooseGameplayTag(TG26_GameplayTags::Ability_Movement_Grounded);
+	TG26_AbilitySystemComponent->RemoveLooseGameplayTag(TG26_GameplayTags::Ability_Movement_DoubleJump); // Resets Double Jump
+}
+

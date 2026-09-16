@@ -16,11 +16,11 @@ class TG26_API UTG26_PlayerWeaponSpec : public UTG26_SpawnedItemSpec
 	GENERATED_BODY()
 	
 public:
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="Weapon")
-	TSoftClassPtr<ATG26_ItemBase> Weapon;
+	// UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="Weapon")
+	// TSoftClassPtr<ATG26_ItemBase> Weapon;
 	
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="Weapon")
-	FName AttachSocket;
+	// UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="Weapon")
+	// FName AttachSocket;
 	
 	virtual UTG26_ItemInstanceBase* CreateItemInstance(UObject* Outer) const override;
 };

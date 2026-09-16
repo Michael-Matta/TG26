@@ -5,14 +5,13 @@
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
 #include "Items/Specs/TG26_ItemSpecBase.h"
+#include "GameplayTagContainer.h"
 #include "TG26_ItemAbilityManagerComp.generated.h"
-
 
 class UTG26_ItemInstanceBase;
 class UTG26_SpawnedItemInstance;
 class UEnhancedInputLocalPlayerSubsystem;
 class UTG26_AbilitySystemComponent;
-struct FGameplayTag;
 class UTG26_ItemSpecBase;
 
 UCLASS(ClassGroup=(Custom), meta=(BlueprintSpawnableComponent))
@@ -29,13 +28,13 @@ public:
 	void CreateItemInstance(UTG26_ItemSpecBase* InItemSpec);
 	
 	UFUNCTION(BlueprintCallable)
-	void EquipItem(const FGameplayTag& InItemTag);
+	void EquipItem(const FGameplayTag InItemTag);
 	
 	UFUNCTION(BlueprintCallable)
 	void UnEquipItem();
 
 	UFUNCTION(BlueprintCallable)
-	UTG26_ItemInstanceBase* GetItemInstance(const FGameplayTag& InItemTag) const;
+	UTG26_ItemInstanceBase* GetItemInstance(const FGameplayTag InItemTag) const;
 	
 	UFUNCTION(BlueprintCallable)
 	UTG26_SpawnedItemInstance* GetActiveItem() const {return CurrentActiveItem;}
@@ -47,7 +46,7 @@ public:
 	}
 	
 	template<typename T>
-	T* GetTypedItemInstance( const FGameplayTag& InItemTag) const
+	T* GetTypedItemInstance( const FGameplayTag InItemTag) const
 	{
 		if (UTG26_ItemInstanceBase* Base = GetItemInstance(InItemTag))
 		{
@@ -58,7 +57,6 @@ public:
 	
 	
 protected:
-
 	
 	UPROPERTY()
 	TObjectPtr<UTG26_AbilitySystemComponent> TG26_AbilitySystemComponent;
@@ -71,6 +69,9 @@ protected:
 	
 	UPROPERTY()
 	TObjectPtr<UTG26_SpawnedItemInstance> CurrentActiveItem;
+	
+	UPROPERTY()
+	FGameplayTag CurrentItemTag;
 	
 	UPROPERTY()
 	TMap<FGameplayTag, TObjectPtr<UTG26_ItemInstanceBase>> CurrentItemMap;

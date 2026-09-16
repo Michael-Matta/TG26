@@ -16,7 +16,9 @@ namespace TG26_GameplayTags
 	// Generic Tags
 	UE_DECLARE_GAMEPLAY_TAG_EXTERN(Ability_BlockMontage)
 	
+	// Item Tags
 	UE_DECLARE_GAMEPLAY_TAG_EXTERN(Ability_Player_Weapon_Staff)
+	UE_DECLARE_GAMEPLAY_TAG_EXTERN(Ability_Player_Weapon_Secondary)
 	
 	// Staff Related Tags
 	UE_DECLARE_GAMEPLAY_TAG_EXTERN(Ability_Player_Equip_Staff)
@@ -24,6 +26,5 @@ namespace TG26_GameplayTags
 	UE_DECLARE_GAMEPLAY_TAG_EXTERN(Ability_Player_Attack_Heavy_Staff)
 	UE_DECLARE_GAMEPLAY_TAG_EXTERN(Ability_Player_Event_Equip_Staff)
 	UE_DECLARE_GAMEPLAY_TAG_EXTERN(Ability_Player_Event_Unequip_Staff)
-
 	
 }

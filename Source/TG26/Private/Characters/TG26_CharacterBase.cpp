@@ -12,12 +12,10 @@ ATG26_CharacterBase::ATG26_CharacterBase()
 {
 	PrimaryActorTick.bCanEverTick = false;
 	PrimaryActorTick.bStartWithTickEnabled = false;
-	
 	GetMesh()->bReceivesDecals = false;
 	
 	TG26_AbilitySystemComponent = CreateDefaultSubobject<UTG26_AbilitySystemComponent>("TG26_AbilitySystemComponent");
-	
-	ItemAbilityManagerComp = CreateDefaultSubobject<UTG26_ItemAbilityManagerComp>("ItemAbilityManagerComponent");
+	TG26_ItemAbilityManagerComponent = CreateDefaultSubobject<UTG26_ItemAbilityManagerComp>("TG26_ItemAbilityManagerComponent");
 	
 }
 
@@ -25,6 +23,8 @@ void ATG26_CharacterBase::BeginPlay()
 {
 	Super::BeginPlay();
 	TG26_AbilitySystemComponent->InitAbilityActorInfo(this, this);
+	
+	// Load Starting Ability Data
 	GiveStartingAbilities();
 }
 
@@ -44,9 +44,8 @@ void ATG26_CharacterBase::GiveStartingAbilities() const
 	if (UTG26_CharacterStartupData* LoadedStartupData = StartupData.LoadSynchronous())
 	{
 		LoadedStartupData->GiveAbilityToComponent(TG26_AbilitySystemComponent);
+		LoadedStartupData->GiveStartingItems(TG26_ItemAbilityManagerComponent);
 	}
-	
-	// @TO_DO Intialize Weapon Specs
 }
 
 void ATG26_CharacterBase::SetMovementState(const EMovementState InMovementState)

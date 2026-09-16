@@ -13,9 +13,11 @@ namespace TG26_GameplayTags
 	
 	
 	UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_EquipMainWeapon)
-	UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Staff_LightAttack)
-	UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Staff_HeavyAttack)
-
+	
+	UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Attack_Light)
+	UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Attack_Heavy)
+	
+	UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Block)
 
 	
 }
