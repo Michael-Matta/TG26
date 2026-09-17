@@ -77,13 +77,15 @@ void UTG26_ItemAbilityManagerComp::EquipItem(const FGameplayTag InItemTag)
 	if (IsValid(CurrentActiveItem))
 		UnEquipItem();
 	
-	UTG26_SpawnedItemInstance* ItemToEquip = Cast<UTG26_SpawnedItemInstance>(CurrentItemMap.Find(InItemTag)->Get());
-	ItemToEquip->SpawnedItemActor->AttachToComponent(OwnerSkeletalMeshComp, FAttachmentTransformRules::SnapToTargetNotIncludingScale, ItemToEquip->SpawnedItemSpec->ActiveSocket);
-	CurrentActiveItem = ItemToEquip;
-	CurrentActiveItem->GrantAbilities();
-	TG26_AbilitySystemComponent->AddLooseGameplayTag(CurrentActiveItem->SpawnedItemSpec->ItemTag);
-	InputSubsystem->AddMappingContext(CurrentActiveItem->SpawnedItemSpec->InputMappingContext, 1);
-	CurrentItemTag = InItemTag;
+	if (UTG26_SpawnedItemInstance* ItemToEquip = Cast<UTG26_SpawnedItemInstance>(CurrentItemMap.Find(InItemTag)->Get()))
+	{
+		ItemToEquip->SpawnedItemActor->AttachToComponent(OwnerSkeletalMeshComp, FAttachmentTransformRules::SnapToTargetNotIncludingScale, ItemToEquip->SpawnedItemSpec->ActiveSocket);
+		CurrentActiveItem = ItemToEquip;
+		CurrentActiveItem->GrantAbilities();
+		TG26_AbilitySystemComponent->AddLooseGameplayTag(CurrentActiveItem->SpawnedItemSpec->ItemTag);
+		InputSubsystem->AddMappingContext(CurrentActiveItem->SpawnedItemSpec->InputMappingContext, 1);
+		CurrentItemTag = InItemTag;
+	}
 }
 
 

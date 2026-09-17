@@ -5,6 +5,7 @@
 
 #include "Characters/TG26_PlayerCharacter.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "GameplayTags/TG26_GameplayTagsAbility.h"
 
 UTG26_SprintAbility::UTG26_SprintAbility()
 {
@@ -25,6 +26,7 @@ void UTG26_SprintAbility::ActivateAbility(const FGameplayAbilitySpecHandle Handl
 	{
 		PlayerCharacter->SetMovementState(EMovementState::Jogging);
 		PlayerCharacter->GetCharacterMovement()->MaxWalkSpeed = 850.0f;
+		PlayerCharacter->AddGameplayTag(TG26_GameplayTags::Ability_Movement_Sprinting);
 	}
 	
 	CommitAbility(Handle, ActorInfo, ActivationInfo);
@@ -41,6 +43,7 @@ void UTG26_SprintAbility::InputReleased(const FGameplayAbilitySpecHandle Handle,
 	{
 		PlayerCharacter->SetMovementState(EMovementState::Walking);
 		PlayerCharacter->GetCharacterMovement()->MaxWalkSpeed = 600.0f;
+		PlayerCharacter->RemoveGameplayTag(TG26_GameplayTags::Ability_Movement_Sprinting);
 	}
 	
 	EndAbility(Handle, ActorInfo, ActivationInfo, false, false);
