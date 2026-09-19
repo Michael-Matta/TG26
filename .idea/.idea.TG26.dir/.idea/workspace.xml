@@ -14,11 +14,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2a1779e-6cbf-4736-83f2-d7e6a6f4e727" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionDevSettings.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionDevSettings.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionSubsystem.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionSubsystem.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/Abilities/Combat/GA_PlayerLightAttack_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/Abilities/Combat/GA_PlayerLightAttack_Base.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/Weapon/Staff/Abilities/GA_Player_StaffAttackLight.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/Weapon/Staff/Abilities/GA_Player_StaffAttackLight.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/AbilitySystem/PlayerAbilities/TG26_SprintAbility.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/AbilitySystem/PlayerAbilities/TG26_SprintAbility.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/Components/TG26_ItemAbilityManagerComp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/Components/TG26_ItemAbilityManagerComp.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26/TG26.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/TG26.Build.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +33,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../../Video Games/UE_5.8/Engine/Source/Runtime/CoreUObject/Public/Templates/Casts.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Video Games/UE_5.8/Engine/Source/Runtime/CoreUObject/Public/UObject/UObjectGlobals.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Video Games/UE_5.8/Engine/Source/Runtime/Engine/Classes/Engine/LocalPlayer.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Video Games/UE_5.8/Engine/Source/Runtime/Engine/Classes/GameFramework/Character.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Video Games/UE_5.8/Engine/Source/Runtime/Engine/Private/Components/SceneComponent.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -43,6 +46,10 @@
     <setting file="file://$PROJECT_DIR$/Source/TG26/Private/Items/InstanceObjects/TG26_SpawnedItemInstance.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Private/Items/Specs/TG26_ItemSpecBase.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Private/Items/Specs/TG26_SpawnedItemSpec.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionDevSettings.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionDevSettings.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionSubsystem.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionSubsystem.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Public/Components/TG26_ItemAbilityManagerComp.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Public/Items/InstanceObjects/TG26_ItemInstanceBase.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Public/Items/InstanceObjects/TG26_PlayerWeaponInstance.h" root0="FORCE_HIGHLIGHTING" />
@@ -161,6 +168,14 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration default="true" type="Uproject" factoryName="rider.uproject">
+      <option name="DEFAULT_PROJECT_PATH" value="" />
+      <option name="PROJECT_FILE_PATH" value="" />
+      <option name="AUTO_SELECT_PRIORITY" value="0" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -224,6 +239,8 @@
       <workItem from="1789507329184" duration="4080000" />
       <workItem from="1789574856174" duration="2331000" />
       <workItem from="1789610192213" duration="1300000" />
+      <workItem from="1789662510745" duration="1921000" />
+      <workItem from="1789755275295" duration="15083000" />
     </task>
     <servers />
   </component>

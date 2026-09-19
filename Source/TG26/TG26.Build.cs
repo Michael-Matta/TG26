@@ -19,12 +19,13 @@ public class TG26 : ModuleRules
 			"GameplayAbilities",
 			"GameplayTasks",
 			"GameplayTags",
-			"UMG"
+			"UMG",
+			"Niagara",
+			"DeveloperSettings"
 		});
 
 		PrivateDependencyModuleNames.AddRange(new string[]
 		{
-			
 		});
 
 		// Uncomment if you are using Slate UI
