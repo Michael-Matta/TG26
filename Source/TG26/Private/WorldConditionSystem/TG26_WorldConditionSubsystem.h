@@ -8,6 +8,7 @@
 #include "TG26_WorldConditionSubsystem.generated.h"
 
 
+class ATG26_MusicManager;
 class UMaterialParameterCollection;
 
 DECLARE_LOG_CATEGORY_EXTERN(LogTG26WorldCondition, Log, All);
@@ -30,19 +31,6 @@ protected:
 	// USubsystem
 	virtual bool DoesSupportWorldType(const EWorldType::Type WorldType) const override;
 	
-private:
-	UPROPERTY()
-	TMap<FName, float> WorldConditions;
-	
-	UPROPERTY()
-	TObjectPtr<UMaterialParameterCollection> MPCAsset;
-
-	// Populates WorldConditions from the collection's scalar parameters and their defaults.
-	void SeedWorldConditionsFromCollection();
-	
-	// Writes one condition out to the MPC and listeners using the Delegate
-	void PushWorldCondition(FName WorldCondition, float Value);
-	
 public:
 	UFUNCTION(BlueprintCallable, Category = "TG26|WorldCondition")
 	void SetConditionLevel(FName WorldCondition, float InValue);
@@ -50,8 +38,28 @@ public:
 	UFUNCTION(BlueprintPure, Category = "TG26|WorldConditon")
 	float GetConditionLevel(FName WorldCondition) const;
 	
+	UPROPERTY()
+	TWeakObjectPtr<ATG26_MusicManager> MusicManager;
+	
+	UFUNCTION()
+	void RegisterMusicManager(ATG26_MusicManager* InMusicManager);
+	
 	// Broadcast on every change 
 	UPROPERTY(BlueprintAssignable, Category = "TG26|WorldCondition")
 	FOnConditionLevelChanged OnConditionLevelChanged;
+	
+	UPROPERTY()
+	TObjectPtr<UMaterialParameterCollection> MPCAsset;
+	
+private:
+	UPROPERTY()
+	TMap<FName, float> WorldConditions;
+	
+
+	// Populates WorldConditions from the collection's scalar parameters and their defaults.
+	void SeedWorldConditionsFromCollection();
+	
+	// Writes one condition out to the MPC and listeners using the Delegate
+	void PushWorldCondition(FName WorldCondition, float Value);
 	
 };

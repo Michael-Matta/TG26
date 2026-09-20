@@ -4,6 +4,7 @@
 #include "TG26_WorldConditionSubsystem.h"
 #include "TG26_WorldConditionDevSettings.h"
 #include "Materials/MaterialParameterCollection.h"
+#include "Audio/TG26_MusicManager.h"
 #include "Kismet/KismetMaterialLibrary.h"
 
 DEFINE_LOG_CATEGORY(LogTG26WorldCondition);
@@ -11,6 +12,8 @@ DEFINE_LOG_CATEGORY(LogTG26WorldCondition);
 void UTG26_WorldConditionSubsystem::Initialize(FSubsystemCollectionBase& Collection)
 {
 	Super::Initialize(Collection);
+	
+	UE_LOG(LogTG26WorldCondition, Warning, TEXT("Initialize running."));
 	
 	const UTG26_WorldConditionDevSettings* WorldConditionDevSettings = GetDefault<UTG26_WorldConditionDevSettings>();
 	
@@ -93,4 +96,23 @@ float UTG26_WorldConditionSubsystem::GetConditionLevel(FName WorldCondition) con
 	}
 	
 	return 0.f;
+}
+
+
+void UTG26_WorldConditionSubsystem::RegisterMusicManager(ATG26_MusicManager* InMusicManager)
+{
+	if (!IsValid(InMusicManager))
+	{
+		UE_LOG(LogTG26WorldCondition, Warning, TEXT("RegisterMusicManager called with an invalid actor — ignoring."));
+		return;
+	}
+	if (MusicManager.IsValid() && MusicManager.Get() != InMusicManager)
+	{
+		UE_LOG(LogTG26WorldCondition, Warning,
+			TEXT("Second Music Manager registration attempt — '%s' is trying to replace '%s'. Only one should be placed per level."),
+			*InMusicManager->GetName(), *MusicManager->GetName());
+		return;
+	}
+	
+	MusicManager = InMusicManager;
 }

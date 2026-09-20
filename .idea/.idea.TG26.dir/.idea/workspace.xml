@@ -14,11 +14,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2a1779e-6cbf-4736-83f2-d7e6a6f4e727" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionDevSettings.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionDevSettings.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionSubsystem.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionSubsystem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/TG26/Private/Audio/TG26_MusicManager.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/TG26/Private/Audio/TG26_MusicManager.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultGame.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGame.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/DarkMap_01.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/MegaGrantMap/DarkMap_01.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/NiagaraData/NPC_MusicFX.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/NiagaraData/NPC_MusicFX.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/Characters/TG26_CharacterBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/Characters/TG26_CharacterBase.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionDevSettings.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionDevSettings.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionSubsystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionSubsystem.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionSubsystem.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionSubsystem.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/TG26/TG26.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/TG26.Build.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,11 +40,16 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../../Video Games/UE_5.8/Engine/Source/Runtime/CoreUObject/Public/Templates/Casts.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Video Games/UE_5.8/Engine/Source/Runtime/CoreUObject/Public/UObject/UObjectGlobals.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Video Games/UE_5.8/Engine/Source/Runtime/Engine/Classes/Components/AudioComponent.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Video Games/UE_5.8/Engine/Source/Runtime/Engine/Classes/Engine/LocalPlayer.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Video Games/UE_5.8/Engine/Source/Runtime/Engine/Classes/GameFramework/Character.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Video Games/UE_5.8/Engine/Source/Runtime/Engine/Private/Audio/AudioTraceUtil.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Video Games/UE_5.8/Engine/Source/Runtime/Engine/Private/Components/SceneComponent.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Video Games/UE_5.8/Engine/Source/Runtime/Engine/Public/Subsystems/WorldSubsystem.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Video Games/UE_5.8/Engine/Source/Runtime/UMG/Private/UserWidget.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Video Games/UE_5.8/Engine/Source/ThirdParty/libpas/src/libpas/libpas.Build.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/TG26/Private/Audio/TG26_MusicManager.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/TG26/Private/Audio/TG26_MusicManager.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Private/Components/TG26_ItemAbilityManagerComp.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Private/Items/InstanceObjects/TG26_ItemInstanceBase.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Private/Items/InstanceObjects/TG26_PlayerWeaponInstance.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -168,14 +178,6 @@
         <option name="Build" />
       </method>
     </configuration>
-    <configuration default="true" type="Uproject" factoryName="rider.uproject">
-      <option name="DEFAULT_PROJECT_PATH" value="" />
-      <option name="PROJECT_FILE_PATH" value="" />
-      <option name="AUTO_SELECT_PRIORITY" value="0" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -241,6 +243,9 @@
       <workItem from="1789610192213" duration="1300000" />
       <workItem from="1789662510745" duration="1921000" />
       <workItem from="1789755275295" duration="15083000" />
+      <workItem from="1789837391130" duration="1558000" />
+      <workItem from="1789842043577" duration="3026000" />
+      <workItem from="1789865094834" duration="6578000" />
     </task>
     <servers />
   </component>

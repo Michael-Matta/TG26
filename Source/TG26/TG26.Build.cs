@@ -20,8 +20,8 @@ public class TG26 : ModuleRules
 			"GameplayTasks",
 			"GameplayTags",
 			"UMG",
-			"Niagara",
-			"DeveloperSettings"
+			"DeveloperSettings",
+			"MetasoundEngine"
 		});
 
 		PrivateDependencyModuleNames.AddRange(new string[]

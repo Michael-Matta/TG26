@@ -18,6 +18,6 @@ public:
 	// UPROPERTY(EditAnywhere, Category = "TG26|WorldCondition")
 	// TSoftObjectPtr<UNiagaraParameterCollection> NiagaraCollection;
 	
-	UPROPERTY(EditAnywhere, Category = "TG26|WorldCondition")
+	UPROPERTY(EditAnywhere, config ,Category = "TG26|WorldCondition")
 	TSoftObjectPtr<UMaterialParameterCollection> MaterialCollection;
 };

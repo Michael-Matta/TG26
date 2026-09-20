@@ -16,7 +16,6 @@ ATG26_CharacterBase::ATG26_CharacterBase()
 	
 	TG26_AbilitySystemComponent = CreateDefaultSubobject<UTG26_AbilitySystemComponent>("TG26_AbilitySystemComponent");
 	TG26_ItemAbilityManagerComponent = CreateDefaultSubobject<UTG26_ItemAbilityManagerComp>("TG26_ItemAbilityManagerComponent");
-	
 }
 
 void ATG26_CharacterBase::BeginPlay()
