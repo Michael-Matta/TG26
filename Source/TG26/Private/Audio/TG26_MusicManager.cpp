@@ -33,14 +33,77 @@ void ATG26_MusicManager::BeginPlay()
 	
 	MusicAudioComponent->OnAudioPlayStateChanged.AddDynamic(this, &ATG26_MusicManager::HandlePlayStateChanged);
 	
+	if (bAutoPlay)MusicAudioComponent->Play();
+	
 }
 
 
-void ATG26_MusicManager::HandlePlayStateChanged(EAudioComponentPlayState NewState)
+void ATG26_MusicManager::HandlePlayStateChanged(EAudioComponentPlayState PlayState)
 {
 
-	if (NewState == EAudioComponentPlayState::Playing)
+	if (PlayState == EAudioComponentPlayState::Playing)
 	{
-		// StartWatching();
+		if (bShouldWatchEnvelope)
+		{
+			StartWatching();
+		}
+	}
+	else if (PlayState == EAudioComponentPlayState::Stopped)
+	{
+		CurrentEnvelope = 0.0f;
+	}
+}
+
+
+void ATG26_MusicManager::StartWatching()
+{
+	if (!IsValid(MusicAudioComponent)) return;
+	
+	UMetaSoundOutputSubsystem* OutputSubsystem = GetWorld()->GetSubsystem<UMetaSoundOutputSubsystem>();
+	if (!OutputSubsystem)
+	{
+		UE_LOG(LogTG26MusicManager, Warning, TEXT("MetaSoundOutput Subsystem unavailable"));
+		return;
+	}
+	
+	bLoggedTypeMismatch = false;
+	
+	FOnMetasoundOutputValueChanged HandleEnvelopeDelegate;
+	HandleEnvelopeDelegate.BindDynamic(this, &ATG26_MusicManager::HandleEnvelopeChanged);
+	
+	const bool bSuccesfullyWatching = OutputSubsystem->WatchOutput(MusicAudioComponent, EnvelopeOutputName, HandleEnvelopeDelegate);
+	
+	if (!bSuccesfullyWatching)
+	{
+		UE_LOG(LogTG26MusicManager, Warning,
+			TEXT("WatchOutput failed for '%s' - is the MetaSound playing?"), *EnvelopeOutputName.ToString());
+	}
+}
+
+
+void ATG26_MusicManager::HandleEnvelopeChanged(FName OutputName, const FMetaSoundOutput& Output)
+{
+	float NewValue = 0.f;
+	
+	if (Output.Get(NewValue))
+	{
+		if (FMath::IsNearlyEqual(CurrentEnvelope, NewValue, KINDA_SMALL_NUMBER)) return;
+		
+		CurrentEnvelope = NewValue;
+		// Broadcast from a MusicManager BP subscribable delegate
+		OnMusicEnvelopeChanged.Broadcast(CurrentEnvelope);
+	}
+	
+	else
+	{
+		// Output.Get() fails if there is a type mismatch
+		if (!bLoggedTypeMismatch)
+		{
+			// Logs once
+			bLoggedTypeMismatch = true;
+			UE_LOG(LogTG26MusicManager, Warning,
+				TEXT("Output '%s' did not yield a float — check the MetaSound output type."),
+				*OutputName.ToString());
+		}
 	}
 }

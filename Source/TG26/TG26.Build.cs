@@ -21,7 +21,8 @@ public class TG26 : ModuleRules
 			"GameplayTags",
 			"UMG",
 			"DeveloperSettings",
-			"MetasoundEngine"
+			"MetasoundEngine",
+			"MetasoundFrontend"
 		});
 
 		PrivateDependencyModuleNames.AddRange(new string[]
