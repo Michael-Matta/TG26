@@ -116,3 +116,8 @@ void UTG26_WorldConditionSubsystem::RegisterMusicManager(ATG26_MusicManager* InM
 	
 	MusicManager = InMusicManager;
 }
+
+ATG26_MusicManager* UTG26_WorldConditionSubsystem::GetMusicManager() const
+{
+	return MusicManager.Get();
+}

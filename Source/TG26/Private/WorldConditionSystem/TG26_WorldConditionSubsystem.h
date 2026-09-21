@@ -38,11 +38,11 @@ public:
 	UFUNCTION(BlueprintPure, Category = "TG26|WorldConditon")
 	float GetConditionLevel(FName WorldCondition) const;
 	
-	UPROPERTY()
-	TWeakObjectPtr<ATG26_MusicManager> MusicManager;
-	
 	UFUNCTION()
 	void RegisterMusicManager(ATG26_MusicManager* InMusicManager);
+	
+	UFUNCTION(BlueprintPure, Category="TG26|Music")
+	ATG26_MusicManager* GetMusicManager() const;
 	
 	// Broadcast on every change 
 	UPROPERTY(BlueprintAssignable, Category = "TG26|WorldCondition")
@@ -55,6 +55,8 @@ private:
 	UPROPERTY()
 	TMap<FName, float> WorldConditions;
 	
+	UPROPERTY()
+	TWeakObjectPtr<ATG26_MusicManager> MusicManager;
 
 	// Populates WorldConditions from the collection's scalar parameters and their defaults.
 	void SeedWorldConditionsFromCollection();
