@@ -6,12 +6,14 @@
 #include "GameFramework/Actor.h"
 #include "TG26_MusicManager.generated.h"
 
+class UNiagaraParameterCollectionInstance;
+class UNiagaraParameterCollection;
 struct FMetaSoundOutput;
 enum class EAudioComponentPlayState : uint8;
 
 DECLARE_LOG_CATEGORY_EXTERN(LogTG26MusicManager, Log, All);
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnMusicEnvelopeChanged, float, EnvelopeVAlue);
+// DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnMusicEnvelopeChanged, float, EnvelopeVAlue);
 
 UCLASS()
 class TG26_API ATG26_MusicManager : public AActor
@@ -21,14 +23,17 @@ class TG26_API ATG26_MusicManager : public AActor
 public:
 	ATG26_MusicManager();
 	
-	UPROPERTY(BlueprintAssignable, Category="TG26|Music")
-	FOnMusicEnvelopeChanged OnMusicEnvelopeChanged;
+	// UPROPERTY(BlueprintAssignable, Category="TG26|Music")
+	// FOnMusicEnvelopeChanged OnMusicEnvelopeChanged;
 
 protected:
 	virtual void BeginPlay() override;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "TG26|Music")
-	bool bAutoPlay = true;
+	bool bAutoPlay = false;
+	
+	UFUNCTION(BlueprintPure, Category="TG26|Music")
+	UAudioComponent* GetMusicAudioComponent() const;
 	
 	UFUNCTION()
 	void HandlePlayStateChanged(EAudioComponentPlayState PlayState);
@@ -40,7 +45,16 @@ protected:
 	bool bShouldWatchEnvelope = true;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "TG26|Music")
-	FName EnvelopeOutputName = TEXT("EnvelopeLEAD");
+	FName EnvelopeOutputName = TEXT("MX_EnvelopeLead");
+	
+	FString EnvelopeOutputString;
+	
+	
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category="TG26|NiagaraParameters")
+	TObjectPtr<UNiagaraParameterCollection> NPCMusicFX;
+	
+	UPROPERTY(Transient)
+	TObjectPtr<UNiagaraParameterCollectionInstance> NPCMusicFXInstance;
 	
 private:
 	UFUNCTION()

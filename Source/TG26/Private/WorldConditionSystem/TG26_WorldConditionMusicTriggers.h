@@ -19,6 +19,9 @@ public:
 
 	virtual void OnConstruction(const FTransform& Transform) override;
 	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="TG26")
+	bool bVisibleInGame = true;
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="TG26", meta=(MakeEditWidget = true))
 	FVector BoxExtents = FVector(256.f,256.f, 256.f);
 
@@ -28,9 +31,9 @@ protected:
 	UPROPERTY(BlueprintReadOnly, Category = "TG26")
 	TObjectPtr<UBoxComponent> BoxCollision;
 
-#if WITH_EDITORONLY_DATA
+// #if WITH_EDITORONLY_DATA
 	UPROPERTY()
 	TObjectPtr<class UTextRenderComponent> EditorLabel;
-#endif
+// #endif
 	
 };

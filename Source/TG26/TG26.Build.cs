@@ -22,11 +22,13 @@ public class TG26 : ModuleRules
 			"UMG",
 			"DeveloperSettings",
 			"MetasoundEngine",
-			"MetasoundFrontend"
+			"MetasoundFrontend",
+			"Niagara"
 		});
 
 		PrivateDependencyModuleNames.AddRange(new string[]
 		{
+			
 		});
 
 		// Uncomment if you are using Slate UI

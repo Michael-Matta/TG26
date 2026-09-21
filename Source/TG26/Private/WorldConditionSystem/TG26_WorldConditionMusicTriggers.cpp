@@ -13,9 +13,10 @@ ATG26_WorldConditionMusicTriggers::ATG26_WorldConditionMusicTriggers()
 	PrimaryActorTick.bCanEverTick = false;
 	
 	BoxCollision = CreateDefaultSubobject<UBoxComponent>("BoxCollision");
+	BoxCollision->SetHiddenInGame(bVisibleInGame);
 	SetRootComponent(BoxCollision);
 	
-#if WITH_EDITORONLY_DATA
+// #if WITH_EDITORONLY_DATA
 	EditorLabel = CreateEditorOnlyDefaultSubobject<UTextRenderComponent>(TEXT("EditorLabel"));
 	if (EditorLabel) // null outside the editor (e.g. commandlets)
 	{
@@ -25,9 +26,9 @@ ATG26_WorldConditionMusicTriggers::ATG26_WorldConditionMusicTriggers()
 		EditorLabel->SetRelativeLocation(FVector(0.f, 0.f, 150.f));
 		EditorLabel->SetTextRenderColor(FColor::Purple);
 		EditorLabel->SetWorldSize(32.f);
-		EditorLabel->SetHiddenInGame(true);
+		EditorLabel->SetHiddenInGame(bVisibleInGame);
 	}
-#endif
+// #endif
 	
 }
 
@@ -47,12 +48,12 @@ void ATG26_WorldConditionMusicTriggers::OnConstruction(const FTransform& Transfo
 		BoxCollision->SetBoxExtent(BoxExtents);
 	}
 	
-#if WITH_EDITORONLY_DATA
+// #if WITH_EDITORONLY_DATA
 	if (EditorLabel)
 	{
 		EditorLabel->SetText(FText::FromString(GetActorLabel()));
 	}
-#endif
+// #endif
 	
 }
 

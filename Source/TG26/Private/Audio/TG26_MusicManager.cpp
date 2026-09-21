@@ -4,6 +4,8 @@
 #include "TG26_MusicManager.h"
 
 #include "MetasoundOutputSubsystem.h"
+#include "NiagaraFunctionLibrary.h"
+#include "NiagaraParameterCollection.h"
 #include "Components/AudioComponent.h"
 #include "WorldConditionSystem/TG26_WorldConditionSubsystem.h"
 
@@ -15,7 +17,10 @@ ATG26_MusicManager::ATG26_MusicManager()
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = false;
 	
+	SetRootComponent(CreateDefaultSubobject<USceneComponent>(TEXT("Root")));
+	
 	MusicAudioComponent = CreateDefaultSubobject<UAudioComponent>("MusicComponent");
+	MusicAudioComponent->SetupAttachment(RootComponent);
 }
 
 
@@ -32,11 +37,28 @@ void ATG26_MusicManager::BeginPlay()
 			TEXT("Failed to register with World Condition Subsystem."));}
 	
 	MusicAudioComponent->OnAudioPlayStateChanged.AddDynamic(this, &ATG26_MusicManager::HandlePlayStateChanged);
-	
 	if (bAutoPlay)MusicAudioComponent->Play();
 	
+	if (NPCMusicFX)
+	{
+		NPCMusicFXInstance = UNiagaraFunctionLibrary::GetNiagaraParameterCollection(this, NPCMusicFX);
+	}
+	
+	EnvelopeOutputString = EnvelopeOutputName.ToString();
 }
 
+
+UAudioComponent* ATG26_MusicManager::GetMusicAudioComponent() const
+{
+	if (!IsValid(MusicAudioComponent))
+	{
+		UE_LOG(LogTG26MusicManager, Warning,
+			TEXT("Music Audio Component is not valid"))
+		return nullptr;
+	}
+	
+	return MusicAudioComponent.Get(); 
+}
 
 void ATG26_MusicManager::HandlePlayStateChanged(EAudioComponentPlayState PlayState)
 {
@@ -81,22 +103,26 @@ void ATG26_MusicManager::StartWatching()
 }
 
 
-void ATG26_MusicManager::HandleEnvelopeChanged(FName OutputName, const FMetaSoundOutput& Output)
+void ATG26_MusicManager::HandleEnvelopeChanged(FName OutputName, const FMetaSoundOutput& MetaSoundOutput)
 {
 	float NewValue = 0.f;
 	
-	if (Output.Get(NewValue))
+	if (MetaSoundOutput.Get(NewValue))
 	{
 		if (FMath::IsNearlyEqual(CurrentEnvelope, NewValue, KINDA_SMALL_NUMBER)) return;
 		
 		CurrentEnvelope = NewValue;
+		
 		// Broadcast from a MusicManager BP subscribable delegate
-		OnMusicEnvelopeChanged.Broadcast(CurrentEnvelope);
+		// OnMusicEnvelopeChanged.Broadcast(CurrentEnvelope);
+		
+		// UPDATE Niagara Parameter Collection
+		NPCMusicFXInstance->SetFloatParameter(EnvelopeOutputString, CurrentEnvelope);
 	}
 	
 	else
 	{
-		// Output.Get() fails if there is a type mismatch
+		// Output.Get() FAILS if there is a type mismatch
 		if (!bLoggedTypeMismatch)
 		{
 			// Logs once
