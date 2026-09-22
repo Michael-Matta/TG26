@@ -47,8 +47,10 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "TG26|Music")
 	FName EnvelopeOutputName = TEXT("MX_EnvelopeLead");
 	
-	FString EnvelopeOutputString;
+	FString EnvelopeOutputNameString;
 	
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="TG26|Music")
+	float NormalizingAdjustment = 3.33;
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category="TG26|NiagaraParameters")
 	TObjectPtr<UNiagaraParameterCollection> NPCMusicFX;
@@ -68,5 +70,4 @@ private:
 protected:
 	UPROPERTY(VisibleAnywhere, Category="TG26|Audio|Music")
 	TObjectPtr<UAudioComponent> MusicAudioComponent;
-	
 };

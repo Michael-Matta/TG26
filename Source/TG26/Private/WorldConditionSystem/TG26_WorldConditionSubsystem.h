@@ -13,7 +13,7 @@ class UMaterialParameterCollection;
 
 DECLARE_LOG_CATEGORY_EXTERN(LogTG26WorldCondition, Log, All);
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnConditionLevelChanged, FName, Channel, float, NewValue);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnConditionLevelChanged, FName, ParameterName, float, NewValue);
 
 
 

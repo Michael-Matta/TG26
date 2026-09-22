@@ -5,6 +5,8 @@
 #include "Components/BoxComponent.h"
 #include "Components/SceneComponent.h"
 #include "Components/TextRenderComponent.h"
+#include "Kismet/GameplayStatics.h"
+#include "WorldConditionSystem/TG26_WorldConditionSubsystem.h"
 
 
 // Sets default values
@@ -37,6 +39,22 @@ void ATG26_WorldConditionMusicTriggers::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	//UWorld version null checks
+	WorldConditionSubsystem = UWorld::GetSubsystem<UTG26_WorldConditionSubsystem>(GetWorld());
+	ensureMsgf(WorldConditionSubsystem, TEXT("%s: WorldConditionSubsystem not available"), *GetName());
+}
+
+void ATG26_WorldConditionMusicTriggers::NotifyActorBeginOverlap(AActor* OtherActor)
+{
+	Super::NotifyActorBeginOverlap(OtherActor);
+	
+	if (OtherActor == UGameplayStatics::GetPlayerPawn(this, 0))
+	{
+		WorldConditionSubsystem->SetConditionLevel(Decay, DecayValue);
+		WorldConditionSubsystem->SetConditionLevel(Chaos, ChaosValue);
+		WorldConditionSubsystem->SetConditionLevel(OpacityDecay, OpacityDecayValue);
+		WorldConditionSubsystem->SetConditionLevel(OpacityLife, OpacityLifeValue);
+	}
 }
 
 void ATG26_WorldConditionMusicTriggers::OnConstruction(const FTransform& Transform)

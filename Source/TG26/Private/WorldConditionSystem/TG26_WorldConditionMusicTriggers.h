@@ -6,6 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "TG26_WorldConditionMusicTriggers.generated.h"
 
+class UTG26_WorldConditionSubsystem;
 class UTextRenderComponent;
 class UBoxComponent;
 
@@ -18,6 +19,10 @@ public:
 	ATG26_WorldConditionMusicTriggers();
 
 	virtual void OnConstruction(const FTransform& Transform) override;
+	virtual void NotifyActorBeginOverlap(AActor* OtherActor) override;
+	
+	UPROPERTY(Transient, BlueprintReadOnly, Category="TG26")
+	TObjectPtr<UTG26_WorldConditionSubsystem> WorldConditionSubsystem;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="TG26")
 	bool bVisibleInGame = true;
@@ -36,4 +41,28 @@ protected:
 	TObjectPtr<class UTextRenderComponent> EditorLabel;
 // #endif
 	
+public:
+	UPROPERTY(BlueprintReadOnly, Category="TG26|MPC")
+	FName Decay = TEXT("Decay");
+	
+	UPROPERTY(BlueprintReadOnly, Category="TG26|MPC")
+	FName Chaos = TEXT("Chaos");
+	
+	UPROPERTY(BlueprintReadOnly, Category="TG26|MPC")
+	FName OpacityDecay = TEXT("OpacityDecay");
+	
+	UPROPERTY(BlueprintReadOnly, Category="TG26|MPC")
+	FName OpacityLife = TEXT("OpacityLife");
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="TG26|MPC")
+	float DecayValue = 0.f;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="TG26|MPC")
+	float ChaosValue = 0.f;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="TG26|MPC")
+	float OpacityDecayValue = 0.f;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="TG26|MPC")
+	float OpacityLifeValue = 0.f;
 };

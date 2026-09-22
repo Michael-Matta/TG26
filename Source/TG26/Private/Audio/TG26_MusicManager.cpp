@@ -44,7 +44,7 @@ void ATG26_MusicManager::BeginPlay()
 		NPCMusicFXInstance = UNiagaraFunctionLibrary::GetNiagaraParameterCollection(this, NPCMusicFX);
 	}
 	
-	EnvelopeOutputString = EnvelopeOutputName.ToString();
+	EnvelopeOutputNameString = EnvelopeOutputName.ToString();
 }
 
 
@@ -93,9 +93,9 @@ void ATG26_MusicManager::StartWatching()
 	FOnMetasoundOutputValueChanged HandleEnvelopeDelegate;
 	HandleEnvelopeDelegate.BindDynamic(this, &ATG26_MusicManager::HandleEnvelopeChanged);
 	
-	const bool bSuccesfullyWatching = OutputSubsystem->WatchOutput(MusicAudioComponent, EnvelopeOutputName, HandleEnvelopeDelegate);
+	const bool bSuccessfullyWatching = OutputSubsystem->WatchOutput(MusicAudioComponent, EnvelopeOutputName, HandleEnvelopeDelegate);
 	
-	if (!bSuccesfullyWatching)
+	if (!bSuccessfullyWatching)
 	{
 		UE_LOG(LogTG26MusicManager, Warning,
 			TEXT("WatchOutput failed for '%s' - is the MetaSound playing?"), *EnvelopeOutputName.ToString());
@@ -111,15 +111,23 @@ void ATG26_MusicManager::HandleEnvelopeChanged(FName OutputName, const FMetaSoun
 	{
 		if (FMath::IsNearlyEqual(CurrentEnvelope, NewValue, KINDA_SMALL_NUMBER)) return;
 		
-		CurrentEnvelope = NewValue;
+		CurrentEnvelope = NormalizingAdjustment * NewValue;
 		
 		// Broadcast from a MusicManager BP subscribable delegate
 		// OnMusicEnvelopeChanged.Broadcast(CurrentEnvelope);
 		
 		// UPDATE Niagara Parameter Collection
-		NPCMusicFXInstance->SetFloatParameter(EnvelopeOutputString, CurrentEnvelope);
+		NPCMusicFXInstance->SetFloatParameter(EnvelopeOutputNameString, CurrentEnvelope);
+		
+		UNiagaraParameterCollectionInstance* WorldInstance =
+			UNiagaraFunctionLibrary::GetNiagaraParameterCollection(this, NPCMusicFX);
+		const float ReadBack = NPCMusicFXInstance->GetFloatParameter(EnvelopeOutputNameString);
+
+		GEngine->AddOnScreenDebugMessage(1, 1.f, FColor::Cyan, FString::Printf(
+			TEXT("NPC %s | '%s' | sent %.3f | readback %.3f | same instance: %s"),
+			*GetPathNameSafe(NPCMusicFX), *EnvelopeOutputNameString, CurrentEnvelope, ReadBack,
+			WorldInstance == NPCMusicFXInstance ? TEXT("yes") : TEXT("no")));
 	}
-	
 	else
 	{
 		// Output.Get() FAILS if there is a type mismatch
