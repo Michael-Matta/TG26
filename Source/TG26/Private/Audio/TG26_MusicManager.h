@@ -32,8 +32,13 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "TG26|Music")
 	bool bAutoPlay = false;
 	
+	// Music Component A has functionality for FX
 	UFUNCTION(BlueprintPure, Category="TG26|Music")
-	UAudioComponent* GetMusicAudioComponent() const;
+	UAudioComponent* GetMusicAudioComponentA() const;
+	
+	// Music Component B has NO functionality for FX
+	UFUNCTION(BlueprintPure, Category="TG26|Music")
+	UAudioComponent* GetMusicAudioComponentB() const;
 	
 	UFUNCTION()
 	void HandlePlayStateChanged(EAudioComponentPlayState PlayState);
@@ -68,6 +73,11 @@ private:
 	bool bLoggedTypeMismatch = false;
 
 protected:
+	// Music Component A has functionality for FX
 	UPROPERTY(VisibleAnywhere, Category="TG26|Audio|Music")
-	TObjectPtr<UAudioComponent> MusicAudioComponent;
+	TObjectPtr<UAudioComponent> MusicAudioComponentA;
+	
+	// Music Component B has NO functionality for FX
+	UPROPERTY(VisibleAnywhere, Category="TG26|Audio|Music")
+	TObjectPtr<UAudioComponent> MusicAudioComponentB;
 };

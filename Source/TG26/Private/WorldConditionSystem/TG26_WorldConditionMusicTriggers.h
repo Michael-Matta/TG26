@@ -65,4 +65,18 @@ public:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="TG26|MPC")
 	float OpacityLifeValue = 0.f;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="TG26|Music")
+	float MusicLayer1Gain = 0.f;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="TG26|Music")
+	float MusicLayer2Gain = 0.f;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="TG26|Music")
+	float MusicLayer3Gain = 0.f;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="TG26|Music")
+	float MusicLayer4Gain = 0.f;
+	
+	
 };

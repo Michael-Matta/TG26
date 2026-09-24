@@ -19,8 +19,11 @@ ATG26_MusicManager::ATG26_MusicManager()
 	
 	SetRootComponent(CreateDefaultSubobject<USceneComponent>(TEXT("Root")));
 	
-	MusicAudioComponent = CreateDefaultSubobject<UAudioComponent>("MusicComponent");
-	MusicAudioComponent->SetupAttachment(RootComponent);
+	MusicAudioComponentA = CreateDefaultSubobject<UAudioComponent>("Music Component A for FX");
+	MusicAudioComponentA->SetupAttachment(RootComponent);
+	
+	MusicAudioComponentB = CreateDefaultSubobject<UAudioComponent>("Music Component B");
+	MusicAudioComponentB->SetupAttachment(RootComponent);
 }
 
 
@@ -36,8 +39,8 @@ void ATG26_MusicManager::BeginPlay()
 	else{ UE_LOG(LogTG26MusicManager, Warning,
 			TEXT("Failed to register with World Condition Subsystem."));}
 	
-	MusicAudioComponent->OnAudioPlayStateChanged.AddDynamic(this, &ATG26_MusicManager::HandlePlayStateChanged);
-	if (bAutoPlay)MusicAudioComponent->Play();
+	MusicAudioComponentA->OnAudioPlayStateChanged.AddDynamic(this, &ATG26_MusicManager::HandlePlayStateChanged);
+	if (bAutoPlay)MusicAudioComponentA->Play();
 	
 	if (NPCMusicFX)
 	{
@@ -48,17 +51,31 @@ void ATG26_MusicManager::BeginPlay()
 }
 
 
-UAudioComponent* ATG26_MusicManager::GetMusicAudioComponent() const
+UAudioComponent* ATG26_MusicManager::GetMusicAudioComponentA() const
 {
-	if (!IsValid(MusicAudioComponent))
+	if (!IsValid(MusicAudioComponentA))
 	{
 		UE_LOG(LogTG26MusicManager, Warning,
-			TEXT("Music Audio Component is not valid"))
+			TEXT("Music Audio Component A is not valid"))
 		return nullptr;
 	}
 	
-	return MusicAudioComponent.Get(); 
+	return MusicAudioComponentA.Get(); 
 }
+
+
+UAudioComponent* ATG26_MusicManager::GetMusicAudioComponentB() const
+{
+	if (!IsValid(MusicAudioComponentB))
+	{
+		UE_LOG(LogTG26MusicManager, Warning,
+			TEXT("Music Audio Component B is not valid"))
+		return nullptr;
+	}
+	
+	return MusicAudioComponentB.Get(); 
+}
+
 
 void ATG26_MusicManager::HandlePlayStateChanged(EAudioComponentPlayState PlayState)
 {
@@ -79,7 +96,7 @@ void ATG26_MusicManager::HandlePlayStateChanged(EAudioComponentPlayState PlaySta
 
 void ATG26_MusicManager::StartWatching()
 {
-	if (!IsValid(MusicAudioComponent)) return;
+	if (!IsValid(MusicAudioComponentA)) return;
 	
 	UMetaSoundOutputSubsystem* OutputSubsystem = GetWorld()->GetSubsystem<UMetaSoundOutputSubsystem>();
 	if (!OutputSubsystem)
@@ -93,7 +110,7 @@ void ATG26_MusicManager::StartWatching()
 	FOnMetasoundOutputValueChanged HandleEnvelopeDelegate;
 	HandleEnvelopeDelegate.BindDynamic(this, &ATG26_MusicManager::HandleEnvelopeChanged);
 	
-	const bool bSuccessfullyWatching = OutputSubsystem->WatchOutput(MusicAudioComponent, EnvelopeOutputName, HandleEnvelopeDelegate);
+	const bool bSuccessfullyWatching = OutputSubsystem->WatchOutput(MusicAudioComponentA, EnvelopeOutputName, HandleEnvelopeDelegate);
 	
 	if (!bSuccessfullyWatching)
 	{

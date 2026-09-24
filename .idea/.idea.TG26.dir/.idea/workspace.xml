@@ -18,17 +18,17 @@
       <change beforePath="$PROJECT_DIR$/Content/TG26/Audio/BP_MusicManager.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Audio/BP_MusicManager.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TG26/Audio/Music/ThemeAStems/MX_ThemeA.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Audio/Music/ThemeAStems/MX_ThemeA.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/WorldConditionTesting/WorldConditionDemo.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/WorldConditionTesting/WorldConditionDemo.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/EnvironmentVFX/NS_AudioWaves.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/EnvironmentVFX/NS_AudioWaves.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/NiagaraSystems/NS_CorruptTree.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/NiagaraSystems/NS_CorruptTree.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/NiagaraSystems/NS_TG_Jellyfish.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/NiagaraSystems/NS_TG_Jellyfish.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Materials/MI_Water_Chaos.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Materials/MI_Water_Chaos.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Materials/M_WaterBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Materials/M_WaterBase.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/EnvironmentVFX/NS_Ribbon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/EnvironmentVFX/NS_Ribbon.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/EnvironmentVFX/NS_SolarRays.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/EnvironmentVFX/NS_SolarRays.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/EnvironmentVFX/TentaclesVFX/NS_Ropes_MultipleParents_205.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/EnvironmentVFX/TentaclesVFX/NS_Ropes_MultipleParents_205.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TG26/VFX/NiagaraSystems/NS_Waves.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/VFX/NiagaraSystems/NS_Waves.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/WorldCondition/NPC_MusicFX.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/WorldCondition/NPC_MusicFX.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TG26/WorldCondition/WCM_Triggers/BP_WCM_Triggers_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/WorldCondition/WCM_Triggers/BP_WCM_Triggers_Base.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/WorldCondition/WCM_Triggers/BP_WCM_Triggers_MusicWorld.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/WorldCondition/WCM_Triggers/BP_WCM_Triggers_MusicWorld.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/TG26/Private/Audio/TG26_MusicManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/Audio/TG26_MusicManager.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/TG26/Private/Audio/TG26_MusicManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/Audio/TG26_MusicManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionMusicTriggers.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionMusicTriggers.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionMusicTriggers.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionMusicTriggers.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionSubsystem.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionSubsystem.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,6 +261,9 @@
       <workItem from="1789949902856" duration="7892000" />
       <workItem from="1790005207567" duration="6235000" />
       <workItem from="1790020413560" duration="10623000" />
+      <workItem from="1790181519033" duration="6330000" />
+      <workItem from="1790204170303" duration="514000" />
+      <workItem from="1790262073935" duration="6903000" />
     </task>
     <servers />
   </component>
