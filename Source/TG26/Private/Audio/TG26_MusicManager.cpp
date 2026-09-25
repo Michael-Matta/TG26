@@ -1,7 +1,7 @@
 // Copyright © 2026 Teka Games. All Rights Reserved.
 
 
-#include "TG26_MusicManager.h"
+#include "TG26/Public/Audio/TG26_MusicManager.h"
 
 #include "MetasoundOutputSubsystem.h"
 #include "NiagaraFunctionLibrary.h"

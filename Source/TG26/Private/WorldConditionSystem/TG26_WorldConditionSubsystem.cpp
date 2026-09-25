@@ -1,8 +1,8 @@
 // Copyright © 2026 Teka Games. All Rights Reserved.
 
 
-#include "TG26_WorldConditionSubsystem.h"
-#include "TG26_WorldConditionDevSettings.h"
+#include "TG26/Public/WorldConditionSystem/TG26_WorldConditionSubsystem.h"
+#include "TG26/Public/WorldConditionSystem/TG26_WorldConditionDevSettings.h"
 #include "Materials/MaterialParameterCollection.h"
 #include "Audio/TG26_MusicManager.h"
 #include "Kismet/KismetMaterialLibrary.h"
