@@ -8,6 +8,7 @@
 #include "GameplayTagContainer.h"
 #include "TG26_ItemAbilityManagerComp.generated.h"
 
+class ATG26_CharacterBase;
 class UTG26_ItemInstanceBase;
 class UTG26_SpawnedItemInstance;
 class UEnhancedInputLocalPlayerSubsystem;
@@ -76,4 +77,6 @@ protected:
 	UPROPERTY()
 	TMap<FGameplayTag, TObjectPtr<UTG26_ItemInstanceBase>> CurrentItemMap;
 	
+	UPROPERTY()
+	TObjectPtr<ATG26_CharacterBase> TG26_Character;
 };

@@ -15,29 +15,22 @@
   <component name="ChangeListManager">
     <list default="true" id="e2a1779e-6cbf-4736-83f2-d7e6a6f4e727" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ParagonSunWukong/Characters/Heroes/Wukong/Meshes/Orion_Proto_Retarget.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ParagonSunWukong/Characters/Heroes/Wukong/Meshes/Wukong.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ParagonSunWukong/Characters/Heroes/Wukong/Meshes/Wukong_Skeleton.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ParagonSunWukong/Characters/Heroes/Wukong/Skins/Infernal/Meshes/Wukong_Infernal.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ParagonSunWukong/Characters/Heroes/Wukong/Skins/Infernal/Meshes/Wukong_Infernal_Skeleton.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Items/Staff.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Items/Staff.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/Abilities/Combat/GA_PlayerLightAttack_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/Abilities/Combat/GA_PlayerLightAttack_Base.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/Abilities/Movement/GA_Jump.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/Abilities/Movement/GA_Jump.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/Weapon/Staff/Abilities/GA_PlayerEquipStaff.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/Weapon/Staff/Abilities/GA_PlayerEquipStaff.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/Weapon/Staff/Abilities/GA_Player_StaffAttackLight.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/Weapon/Staff/Abilities/GA_Player_StaffAttackLight.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/CPP_Testing.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/CPP_Testing.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/WorldConditionTesting/WorldConditionSystemTesting.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/WorldConditionTesting/WorldConditionSystemTesting.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Materials/M_EyeMachine_Glow.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Materials/M_EyeMachine_Glow.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/WorldCondition/WCM_Triggers/BP_WCM_Triggers_Base.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/WorldCondition/WCM_Triggers/BP_WCM_Triggers_Music.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/WorldCondition/WCM_Triggers/BP_WCM_Triggers_Music.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/WorldCondition/WCM_Triggers/BP_WCM_Triggers_MusicAWorld.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/WorldCondition/WCM_Triggers/BP_WCM_Triggers_MusicB.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/WorldCondition/WCM_Triggers/BP_WCM_Triggers_MusicBLayers.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/WorldCondition/WCM_Triggers/BP_WCM_Triggers_MusicWorld.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/mattaVFX/MaterialsVFX/M_Flare.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/mattaVFX/MaterialsVFX/M_Flare.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/Audio/TG26_MusicManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/Audio/TG26_MusicManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/Audio/TG26_MusicManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Public/Audio/TG26_MusicManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionDevSettings.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionDevSettings.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionDevSettings.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Public/WorldConditionSystem/TG26_WorldConditionDevSettings.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionMusicTriggers.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionMusicTriggers.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionMusicTriggers.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Public/WorldConditionSystem/TG26_WorldConditionMusicTriggers.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionSubsystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionSubsystem.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionSubsystem.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Public/WorldConditionSystem/TG26_WorldConditionSubsystem.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/AbilitySystem/PlayerAbilities/TG26_SprintAbility.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/AbilitySystem/PlayerAbilities/TG26_SprintAbility.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/Characters/TG26_CharacterBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/Characters/TG26_CharacterBase.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/Characters/TG26_PlayerCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/Characters/TG26_PlayerCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/Components/TG26_ItemAbilityManagerComp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/Components/TG26_ItemAbilityManagerComp.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/GameplayTags/TG26_GameplayTagsAbility.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/GameplayTags/TG26_GameplayTagsAbility.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26/Public/Characters/TG26_CharacterBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Public/Characters/TG26_CharacterBase.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26/Public/Characters/TG26_PlayerCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Public/Characters/TG26_PlayerCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26/Public/Components/TG26_ItemAbilityManagerComp.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Public/Components/TG26_ItemAbilityManagerComp.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26/Public/GameplayTags/TG26_GameplayTagsAbility.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Public/GameplayTags/TG26_GameplayTagsAbility.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,6 +273,9 @@
       <workItem from="1790361485545" duration="36000" />
       <workItem from="1790365941274" duration="471000" />
       <workItem from="1790609686889" duration="2000" />
+      <workItem from="1790609749912" duration="646000" />
+      <workItem from="1790610555672" duration="4279000" />
+      <workItem from="1790712897368" duration="2311000" />
     </task>
     <servers />
   </component>

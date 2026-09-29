@@ -43,8 +43,12 @@ protected:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="TG26_StartupData")
 	TSoftObjectPtr<UTG26_CharacterStartupData> StartupData;
 	
-	void GiveStartingAbilities() const;
+	// Animation
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="TG26|Character|Animation", meta=(AllowPrivateAccess="True"))
+	TSubclassOf<UAnimInstance> AnimLayerClass;
 	
+	void GiveStartingAbilities() const;
+
 public:
 
 	UFUNCTION(BlueprintCallable, BlueprintPure, Category="TG26|Item|Abilties")
@@ -61,4 +65,9 @@ public:
 
 	UFUNCTION(BlueprintPure, Category="TG26|Animation")
 	EMovementState GetMovementState() const {return MovementState;}
+	
+	UFUNCTION(BlueprintCallable, Category="TG26|Character|Animation")
+	void SetLinkedLayerToDefault();
+	
+	void OnMovementModeChanged(EMovementMode PrevMovementMode, uint8 PreviousCustomMode = 0) override;
 };

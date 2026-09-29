@@ -35,10 +35,7 @@ protected:
 	// Input Config - Mapping Context and Input Actions
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="TG26|Character|Input", meta=(AllowPrivateAccess="True"))
 	TObjectPtr<UTG26_InputConfig> InputConfig;
-	
-	// Animation
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="TG26|Character|Animation", meta=(AllowPrivateAccess="True"))
-	TSubclassOf<UAnimInstance> AnimLayerClass;
+
 	
 protected:
 	UPROPERTY(EditDefaultsOnly, Category ="TG26|Character|Input", meta=(AllowPrivateAccess=true))
@@ -56,7 +53,7 @@ protected:
 public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	
-	virtual void Landed(const FHitResult& Hit) override;
+
 	
 };
 	

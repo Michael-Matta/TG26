@@ -11,7 +11,8 @@ UTG26_SprintAbility::UTG26_SprintAbility()
 {
 	bActivateAbilityOnGranted = false;
 	InstancingPolicy = EGameplayAbilityInstancingPolicy::InstancedPerActor;
-	
+	ActivationOwnedTags.AddTag(TG26_GameplayTags::Ability_Movement_Sprinting);
+	ActivationBlockedTags.AddTag(TG26_GameplayTags::Ability_Movement_Airborne);
 	
 }
 
@@ -19,17 +20,14 @@ void UTG26_SprintAbility::ActivateAbility(const FGameplayAbilitySpecHandle Handl
 	const FGameplayAbilityActorInfo* ActorInfo, const FGameplayAbilityActivationInfo ActivationInfo,
 	const FGameplayEventData* TriggerEventData)
 {
-	//Super::ActivateAbility(Handle, ActorInfo, ActivationInfo, TriggerEventData);
+	CommitAbility(Handle, ActorInfo, ActivationInfo);
 	
 	ATG26_PlayerCharacter* PlayerCharacter= GetPlayerCharacterFromInfo();
 	if (IsValid(PlayerCharacter))
 	{
 		PlayerCharacter->SetMovementState(EMovementState::Jogging);
 		PlayerCharacter->GetCharacterMovement()->MaxWalkSpeed = 850.0f;
-		PlayerCharacter->AddGameplayTag(TG26_GameplayTags::Ability_Movement_Sprinting);
 	}
-	
-	CommitAbility(Handle, ActorInfo, ActivationInfo);
 }
 
 
@@ -43,8 +41,5 @@ void UTG26_SprintAbility::InputReleased(const FGameplayAbilitySpecHandle Handle,
 	{
 		PlayerCharacter->SetMovementState(EMovementState::Walking);
 		PlayerCharacter->GetCharacterMovement()->MaxWalkSpeed = 600.0f;
-		PlayerCharacter->RemoveGameplayTag(TG26_GameplayTags::Ability_Movement_Sprinting);
 	}
-	
-	EndAbility(Handle, ActorInfo, ActivationInfo, false, false);
 }

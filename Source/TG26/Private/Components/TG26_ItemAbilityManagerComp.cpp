@@ -22,7 +22,8 @@ void UTG26_ItemAbilityManagerComp::BeginPlay()
 	
 	if (AActor* Owner = GetOwner())
 	{
-		if (ATG26_CharacterBase* TG26_Character = Cast<ATG26_CharacterBase>(Owner))
+		TG26_Character = Cast<ATG26_CharacterBase>(Owner);
+		if (IsValid(TG26_Character))
 		{
 			OwnerSkeletalMeshComp = TG26_Character->GetMesh();
 			TG26_AbilitySystemComponent = Cast<UTG26_AbilitySystemComponent>(TG26_Character->GetAbilitySystemComponent());
@@ -97,6 +98,7 @@ void UTG26_ItemAbilityManagerComp::UnEquipItem()
 	CurrentActiveItem->RemoveAbilities();
 	TG26_AbilitySystemComponent->RemoveLooseGameplayTag(CurrentActiveItem->SpawnedItemSpec->ItemTag);
 	InputSubsystem->RemoveMappingContext(CurrentActiveItem->SpawnedItemSpec->InputMappingContext);
+	TG26_Character->SetLinkedLayerToDefault();
 	CurrentActiveItem=nullptr;
 	CurrentItemTag = FGameplayTag();
 }

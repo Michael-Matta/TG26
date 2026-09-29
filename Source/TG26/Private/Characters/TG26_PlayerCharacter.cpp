@@ -3,7 +3,7 @@
 
 #include "TG26/Public/Characters/TG26_PlayerCharacter.h"
 
-#include "EnhancedInputComponent.h"
+
 #include "EnhancedInputSubsystems.h"
 #include "InputMappingContext.h"
 #include "AbilitySystem/TG26_AbilitySystemComponent.h"
@@ -14,7 +14,7 @@
 #include "GameplayTags/TG26_GameplayTagsInput.h"
 #include "Input/TG26_InputComponent.h"
 #include "Input/TG26_InputConfig.h"
-#include "TG26/TG26.h"
+
 
 
 // Sets default values
@@ -57,14 +57,9 @@ ATG26_PlayerCharacter::ATG26_PlayerCharacter()
 void ATG26_PlayerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	
 	MovementState = EMovementState::Walking;
-	TG26_AbilitySystemComponent->AddLooseGameplayTag(TG26_GameplayTags::Ability_Movement_Grounded);
 	
-	if (IsValid(AnimLayerClass))
-	{
-		GetMesh()->LinkAnimClassLayers(AnimLayerClass);
-	}
+	SetLinkedLayerToDefault();
 }
 
 
@@ -91,7 +86,6 @@ void ATG26_PlayerCharacter::SetupPlayerInputComponent(class UInputComponent* Pla
 		TG26_InputComponent->BindNativeAction(InputConfig, TG26_GameplayTags::InputTag_Look, ETriggerEvent::Triggered, this, &ThisClass::Look);
 		
 		TG26_InputComponent->BindAbilityAction(InputConfig, this, &ThisClass::AbilityInputPressed,&ThisClass::AbilityInputReleased);
-		
 	}
 }
 
@@ -130,13 +124,5 @@ void ATG26_PlayerCharacter::AbilityInputPressed(const FGameplayTag InputTag)
 void ATG26_PlayerCharacter::AbilityInputReleased(const FGameplayTag InputTag)
 {
 	TG26_AbilitySystemComponent->AbilityTagReleased(InputTag);
-}
-
-
-void ATG26_PlayerCharacter::Landed(const FHitResult& Hit)
-{
-	Super::Landed(Hit);
-	TG26_AbilitySystemComponent->AddLooseGameplayTag(TG26_GameplayTags::Ability_Movement_Grounded);
-	TG26_AbilitySystemComponent->RemoveLooseGameplayTag(TG26_GameplayTags::Ability_Movement_DoubleJump); // Resets Double Jump
 }
 
