@@ -15,22 +15,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e2a1779e-6cbf-4736-83f2-d7e6a6f4e727" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TG26.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Items/Staff.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Items/Staff.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/Abilities/Combat/GA_PlayerLightAttack_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/Abilities/Combat/GA_PlayerLightAttack_Base.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/Abilities/Movement/GA_Jump.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/Abilities/Movement/GA_Jump.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/Weapon/Staff/Abilities/GA_PlayerEquipStaff.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/Weapon/Staff/Abilities/GA_PlayerEquipStaff.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Character/Player/Weapon/Staff/Abilities/GA_Player_StaffAttackLight.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Character/Player/Weapon/Staff/Abilities/GA_Player_StaffAttackLight.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TG26/Maps/CPP_Testing.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TG26/Maps/CPP_Testing.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/AbilitySystem/PlayerAbilities/TG26_SprintAbility.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/AbilitySystem/PlayerAbilities/TG26_SprintAbility.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/Characters/TG26_CharacterBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/Characters/TG26_CharacterBase.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/Characters/TG26_PlayerCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/Characters/TG26_PlayerCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/Components/TG26_ItemAbilityManagerComp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/Components/TG26_ItemAbilityManagerComp.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Private/GameplayTags/TG26_GameplayTagsAbility.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Private/GameplayTags/TG26_GameplayTagsAbility.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Public/Characters/TG26_CharacterBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Public/Characters/TG26_CharacterBase.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Public/Characters/TG26_PlayerCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Public/Characters/TG26_PlayerCharacter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Public/Components/TG26_ItemAbilityManagerComp.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Public/Components/TG26_ItemAbilityManagerComp.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TG26/Public/GameplayTags/TG26_GameplayTagsAbility.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26/Public/GameplayTags/TG26_GameplayTagsAbility.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26.Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26.Target.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26_Editor/Private/TG26_Editor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26_Editor/Private/TG26_Editor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26_Editor/Public/TG26_Editor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26_Editor/Public/TG26_Editor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TG26_Editor/TG26_Editor.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TG26_Editor/TG26_Editor.Build.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +27,10 @@
   </component>
   <component name="DpaMonitoringSettings">
     <option name="firstShow" value="false" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="4370" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,7 +52,6 @@
     <setting file="file://$PROJECT_DIR$/../../../Video Games/UE_5.8/Engine/Source/Runtime/UMG/Private/UserWidget.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Video Games/UE_5.8/Engine/Source/ThirdParty/libpas/src/libpas/libpas.Build.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Private/Audio/TG26_MusicManager.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/TG26/Private/Audio/TG26_MusicManager.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Private/Components/TG26_ItemAbilityManagerComp.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Private/Items/InstanceObjects/TG26_ItemInstanceBase.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Private/Items/InstanceObjects/TG26_PlayerWeaponInstance.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -68,17 +59,79 @@
     <setting file="file://$PROJECT_DIR$/Source/TG26/Private/Items/Specs/TG26_ItemSpecBase.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Private/Items/Specs/TG26_SpawnedItemSpec.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionDevSettings.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionDevSettings.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionMusicTriggers.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionMusicTriggers.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionSubsystem.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/TG26/Private/WorldConditionSystem/TG26_WorldConditionSubsystem.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Public/Components/TG26_ItemAbilityManagerComp.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Public/Items/InstanceObjects/TG26_ItemInstanceBase.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Public/Items/InstanceObjects/TG26_PlayerWeaponInstance.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Public/Items/InstanceObjects/TG26_SpawnedItemInstance.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Public/Items/Specs/TG26_ItemSpecBase.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TG26/Public/Items/Specs/TG26_SpawnedItemSpec.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/dev/UE26/TG26/Source/TG26.Target.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/dev/UE26/TG26/Source/TG26_Editor/TG26_Editor.Build.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.703702121637312" />
+      <entry key="MS500" value="4.945693116656781" />
+      <entry key="S2" value="14.530470540871463" />
+      <entry key="S5" value="27.992175299218715" />
+      <entry key="S10" value="40.69995753641208" />
+      <entry key="S30" value="57.07355528117897" />
+      <entry key="S60" value="63.43670992602877" />
+      <entry key="M2" value="70.96842069663263" />
+      <entry key="M5" value="92.9679946071763" />
+      <entry key="M10" value="127.82974448093329" />
+      <entry key="M15" value="155.66129649780532" />
+      <entry key="M30" value="204.81237745177026" />
+      <entry key="H1" value="243.42078061362864" />
+      <entry key="H2" value="267.9767416944152" />
+      <entry key="H4" value="281.87639647434816" />
+      <entry key="D1" value="294.3894061942402" />
+      <entry key="W1" value="296.62478566630637" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.6444791279445552" />
+      <entry key="MS500" value="4.90989996616728" />
+      <entry key="S2" value="14.504764455288687" />
+      <entry key="S5" value="27.972484901988615" />
+      <entry key="S10" value="40.685621936296734" />
+      <entry key="S30" value="57.06683031922324" />
+      <entry key="S60" value="63.432967678977" />
+      <entry key="M2" value="70.96632660398926" />
+      <entry key="M5" value="92.96689421666733" />
+      <entry key="M10" value="127.82897159171876" />
+      <entry key="M15" value="155.66065499008133" />
+      <entry key="M30" value="204.81193955942797" />
+      <entry key="H1" value="243.42051385313982" />
+      <entry key="H2" value="267.9765927928871" />
+      <entry key="H4" value="281.8763175841657" />
+      <entry key="D1" value="294.38939237540507" />
+      <entry key="W1" value="296.62478367501717" />
+    </decayedShown>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -98,6 +151,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -114,7 +168,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.toDoOptions&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMConfigurable&quot;
   }
 }</component>
   <component name="RunManager">
@@ -276,6 +330,9 @@
       <workItem from="1790609749912" duration="646000" />
       <workItem from="1790610555672" duration="4279000" />
       <workItem from="1790712897368" duration="2311000" />
+      <workItem from="1790868647995" duration="259000" />
+      <workItem from="1790869057635" duration="3395000" />
+      <workItem from="1790872497842" duration="3978000" />
     </task>
     <servers />
   </component>

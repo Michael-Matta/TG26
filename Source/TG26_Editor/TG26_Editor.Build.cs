@@ -10,16 +10,23 @@ public class TG26_Editor : ModuleRules
             new string[]
             {
                 "Core",
+                "CoreUObject",
+                "Engine",
+                // Exposed through public ActorOptimizer headers (UEditorSubsystem / UEditorUtilityWidget base classes)
+                "EditorSubsystem",
+                "Blutility",
+                "UMG",
             }
         );
 
         PrivateDependencyModuleNames.AddRange(
             new string[]
             {
-                "CoreUObject",
-                "Engine",
                 "Slate",
-                "SlateCore"
+                "SlateCore",
+                "UnrealEd",
+                "PropertyEditor",          // FActorOptimizationSettingsCustomization
+                "ScriptableEditorWidgets"  // UDetailsView in the optimizer widget
             }
         );
     }

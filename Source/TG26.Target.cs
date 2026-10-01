@@ -17,6 +17,7 @@ public class TG26Target : TargetRules
 
 	private void RegisterModulesCreatedByRider()
 	{
-		ExtraModuleNames.AddRange(new string[] { "TG26_Editor", "TGCommon" });
+		// TG26_Editor is an Editor-type module (depends on UnrealEd) and must not be built into the Game target.
+		ExtraModuleNames.AddRange(new string[] { "TGCommon" });
 	}
 }
