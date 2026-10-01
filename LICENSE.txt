@@ -1,0 +1,71 @@
+TG26 - Source-Available Evaluation License
+
+Copyright (c) 2026 The Teka Games. All rights reserved.
+
+1. PURPOSE
+
+This repository is published solely so that prospective employers,
+recruiters, and hiring staff ("Reviewers") can evaluate the author's
+skills and work. It is not open-source software.
+
+2. LIMITED PERMISSION
+
+Reviewers are granted a limited, non-exclusive, non-transferable,
+revocable permission to view and read the contents of this repository
+for the sole purpose of evaluating the author for employment or
+contract opportunities. Making technical copies as an unavoidable part
+of viewing (for example, a local clone or browser cache) is permitted
+for that purpose only.
+
+3. RESTRICTIONS
+
+Except as expressly permitted in Section 2, you may not, without prior
+written permission from the author:
+
+  a. copy, reproduce, or redistribute any part of this repository;
+  b. modify, adapt, translate, or create derivative works from it;
+  c. use it, in whole or in part, in any product, service, game, or
+     project, whether commercial or non-commercial;
+  d. publish, sublicense, sell, rent, lease, or otherwise make it
+     available to any third party;
+  e. use it to train, fine-tune, or evaluate machine learning or AI
+     models, or include it in any dataset;
+  f. remove or alter any copyright, attribution, or license notice.
+
+4. GITHUB PLATFORM NOTICE
+
+GitHub's Terms of Service permit users to view and fork public
+repositories within the GitHub platform. That platform feature does not
+grant any additional rights under this license. Forks and copies remain
+subject to this license and may not be used beyond Section 2.
+
+5. THIRD-PARTY MATERIALS
+
+This repository may reference or include third-party software, engine
+components, plugins, or assets that are owned by others and governed by
+their own licenses. Nothing in this license grants any rights in those
+materials. You are responsible for complying with their terms.
+
+6. OWNERSHIP
+
+All rights, title, and interest in this repository, including all
+intellectual property rights, remain with the author. No rights are
+granted except as expressly stated above.
+
+7. TERMINATION
+
+The permission in Section 2 may be revoked by the author at any time and
+terminates automatically if you breach this license. Upon termination,
+you must delete all copies in your possession.
+
+8. NO WARRANTY
+
+THIS REPOSITORY IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY ARISING FROM OR IN CONNECTION WITH THIS REPOSITORY OR ITS USE.
+
+9. CONTACT
+
+For permission requests or questions: Michael.matta@gmail.com
